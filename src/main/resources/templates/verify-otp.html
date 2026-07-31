@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP — MediCare Plus</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+</head>
+<body class="auth-page">
+<div class="auth-shell">
+    <section class="auth-panel">
+        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 24px;">
+            <div style="width: 36px; height: 36px; background: rgba(255,255,255,0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                </svg>
+            </div>
+            <span style="font-weight: 800; font-size: 1.2rem;">MediCare Plus</span>
+        </div>
+        <p class="eyebrow" style="color: rgba(255,255,255,0.8);">OTP Verification</p>
+        <h1>Check your email</h1>
+        <p>A verification code has been sent to your email (<strong th:text="${email}">your email</strong>). It is valid for <strong>5 minutes</strong>.</p>
+    </section>
+
+    <section class="auth-card">
+        <p class="eyebrow">Step 2 of 3 — Verify OTP Code</p>
+        <h2 style="font-size: 1.6rem; font-weight: 800; margin: 0 0 16px;">Enter 6-Digit Code</h2>
+
+        <div class="notice" th:if="${sent}" style="background: #eff6ff; border-color: #bfdbfe; color: #1e40af;">
+            A verification code has been sent to your email (<strong th:text="${email}">email</strong>).
+        </div>
+
+        <div class="errors" th:if="${error != null}" th:text="${error}">
+            Invalid or expired OTP code.
+        </div>
+
+        <form class="form-grid" th:action="@{/verify-otp}" method="post">
+            <input type="hidden" name="email" th:value="${email}">
+
+            <div class="field">
+                <label for="otpCode">6-Digit Verification Code</label>
+                <input id="otpCode" name="otpCode" placeholder="••••••" maxlength="6" pattern="[0-9]{6}" autocomplete="one-time-code" required style="font-size: 1.6rem; font-weight: 800; letter-spacing: 12px; text-align: center; height: 56px;">
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; background: #f8fafc; padding: 12px 16px; border-radius: 10px; font-size: 0.88rem;">
+                <span style="color: #64748b; font-weight: 600;">Code Expires in: <strong id="timer" style="color: #dc2626;">05:00</strong></span>
+                <a th:href="@{/resend-otp(email=${email})}" style="color: var(--primary); font-weight: 700;">Resend OTP</a>
+            </div>
+
+            <button type="submit" class="btn-pill-primary" style="width: 100%; height: 46px; font-size: 1rem; border-radius: 12px; margin-top: 8px;">Verify OTP Code</button>
+        </form>
+
+        <p style="margin-top: 24px; font-size: 0.92rem; color: #64748b; text-align: center;">
+            Entered the wrong email? <a th:href="@{/forgot-password}" style="color: var(--primary); font-weight: 700;">Change Email</a>
+        </p>
+    </section>
+</div>
+
+<script>
+    let duration = 300;
+    const timerDisplay = document.getElementById('timer');
+    const interval = setInterval(() => {
+        const minutes = Math.floor(duration / 60);
+        const seconds = duration % 60;
+        timerDisplay.textContent = String(minutes).padStart(2, '0') + ':' + String(seconds).padStart(2, '0');
+        if (--duration < 0) {
+            clearInterval(interval);
+            timerDisplay.textContent = 'EXPIRED';
+        }
+    }, 1000);
+</script>
+</body>
+</html>

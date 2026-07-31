@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Dashboard</title>
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div class="app-shell">
+    <header class="topbar">
+        <div class="brand">Hospital Management System</div>
+        <nav class="nav-actions">
+            <a href="/dashboard">Dashboard</a>
+            
+            
+            
+            
+            
+            <a href="/patient-reports">My Reports</a>
+            <a href="/my-prescriptions">My Prescriptions</a>
+            <form class="logout-form" action="/logout" method="post"><input type="hidden" name="_csrf" value="zRSHX_YEHJ8WRXhkYASY2satEbB3sfelnbt6IVm-W0UicVIQrHDkbMU8LKw7dE8BAymsvP6fPIgTgseIrIoYQj-KaHETQDEg"/>
+                <button type="submit">Logout</button>
+            </form>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-title">
+            <span class="portal-badge">Patient Portal</span>
+            <h1>Welcome, Patient Bob Carter</h1>
+            <p>Manage hospital work from a focused portal built around your role, permissions, and daily tasks.</p>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="stats-grid">
+            <div class="stat">
+                <span>Registered patients</span>
+                <strong>1</strong>
+            </div>
+            <div class="stat">
+                <span>Medicines tracked</span>
+                <strong>0</strong>
+            </div>
+            <div class="stat">
+                <span>Medical reports</span>
+                <strong>0</strong>
+            </div>
+        </section>
+
+        <section class="portal-grid">
+            
+
+            
+
+            <article class="portal-card patient">
+                <span>Patient workspace</span>
+                <h2>Personal health portal</h2>
+                <p>Access your reports and prescription summaries without seeing staff-only records.</p>
+                <div class="card-actions">
+                    <a class="button" href="/patient-reports">Open My Reports</a>
+                    <a class="button secondary" href="/my-prescriptions">My Prescriptions</a>
+                </div>
+            </article>
+
+            
+
+            
+
+            
+        </section>
+    </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,277 @@
+# Common Medicines Information Guide (Educational Reference)
+
+## IMPORTANT DISCLAIMER
+This information is for educational purposes ONLY. Never self-medicate. Always consult a qualified healthcare professional before starting, stopping, or changing any medication. Dosages vary based on age, weight, medical conditions, and other factors.
+
+---
+
+## Paracetamol (Acetaminophen)
+
+### Uses
+- Fever reduction (antipyretic)
+- Mild to moderate pain relief (headache, toothache, muscle pain, menstrual cramps)
+- Common cold and flu symptom relief
+
+### General Dosage Information
+- Adults: 500mg-1000mg every 4-6 hours as needed (maximum 4g/day)
+- Children: Dosage based on weight and age — always consult pediatrician
+- Available as tablets, liquid suspension, suppositories
+
+### Side Effects
+- Generally well-tolerated at recommended doses
+- Rare: skin rash, allergic reactions
+- Overdose risk: severe liver damage (especially with alcohol use)
+
+### Warnings
+- Do NOT exceed recommended daily dose
+- Avoid with chronic alcohol use
+- Caution in liver disease patients
+- Check other medications for paracetamol content to avoid double-dosing
+- Seek emergency care if overdose suspected
+
+---
+
+## Ibuprofen
+
+### Uses
+- Pain relief (headache, dental pain, menstrual cramps, muscle pain, arthritis)
+- Fever reduction
+- Anti-inflammatory (reduces swelling)
+
+### General Information
+- NSAID (Non-Steroidal Anti-Inflammatory Drug)
+- Take with food or milk to reduce stomach irritation
+- Available as tablets, capsules, liquid suspension, topical gel
+
+### Side Effects
+- Stomach pain, nausea, heartburn
+- Increased risk of stomach ulcers and GI bleeding
+- Dizziness, headache
+- Kidney problems with prolonged use
+- Increased blood pressure
+
+### Warnings
+- Avoid in patients with stomach ulcers or GI bleeding
+- Use with caution in kidney disease, heart disease, hypertension
+- NOT recommended during dengue (increases bleeding risk)
+- Avoid during late pregnancy (third trimester)
+- Do not combine with other NSAIDs or blood thinners without medical advice
+
+---
+
+## Amoxicillin
+
+### Uses
+- Bacterial infections: ear infections, sinus infections, urinary tract infections, throat infections, pneumonia, bronchitis, skin infections, dental infections
+
+### General Information
+- Penicillin-type antibiotic
+- Available as capsules, tablets, liquid suspension
+- Usually taken 2-3 times daily for 5-14 days
+- Complete the full course even if symptoms improve
+
+### Side Effects
+- Nausea, vomiting, diarrhea
+- Skin rash (may indicate allergy)
+- Yeast infections (candidiasis)
+- Stomach discomfort
+
+### Warnings
+- DO NOT use if allergic to penicillin or cephalosporins
+- Inform doctor about all other medications
+- May reduce effectiveness of oral contraceptives
+- Seek immediate care if severe allergic reaction (anaphylaxis): difficulty breathing, swelling of face/throat, hives
+
+---
+
+## Metformin
+
+### Uses
+- Type 2 diabetes management
+- Polycystic ovary syndrome (PCOS)
+- Prediabetes prevention
+
+### General Information
+- First-line medication for Type 2 diabetes
+- Works by reducing liver glucose production and improving insulin sensitivity
+- Take with meals to reduce GI side effects
+- Available as immediate-release and extended-release tablets
+
+### Side Effects
+- Nausea, diarrhea, stomach cramps (common initially, usually improves)
+- Metallic taste in mouth
+- Vitamin B12 deficiency with long-term use
+- Rare but serious: lactic acidosis (seek emergency care if muscle pain, difficulty breathing, unusual fatigue)
+
+### Warnings
+- NOT for Type 1 diabetes
+- Avoid in severe kidney disease (eGFR below 30)
+- Temporarily discontinue before contrast dye procedures
+- Avoid excessive alcohol
+- Monitor kidney function regularly
+
+---
+
+## Amlodipine
+
+### Uses
+- High blood pressure (hypertension)
+- Chest pain (angina)
+- Coronary artery disease
+
+### General Information
+- Calcium channel blocker
+- Usually taken once daily
+- May take 1-2 weeks for full effect on blood pressure
+- Do not stop abruptly
+
+### Side Effects
+- Swelling of ankles/feet (edema)
+- Dizziness and lightheadedness
+- Flushing (feeling of warmth)
+- Fatigue
+- Palpitations
+
+### Warnings
+- Monitor blood pressure regularly
+- Avoid grapefruit and grapefruit juice (increases drug levels)
+- Caution in liver disease
+- Inform doctor before surgery
+
+---
+
+## Omeprazole
+
+### Uses
+- Gastroesophageal reflux disease (GERD)
+- Stomach and duodenal ulcers
+- H. pylori eradication (with antibiotics)
+- Acid-related stomach disorders
+- Prevention of NSAID-induced ulcers
+
+### General Information
+- Proton pump inhibitor (PPI)
+- Take 30 minutes before breakfast on empty stomach
+- Capsules should be swallowed whole, not crushed
+
+### Side Effects
+- Headache, nausea, diarrhea, constipation
+- Abdominal pain, gas
+- Long-term use: Vitamin B12 and magnesium deficiency, increased fracture risk
+
+### Warnings
+- Not recommended for long-term use without medical supervision
+- May interact with blood thinners (clopidogrel)
+- Report severe diarrhea (possible C. difficile infection)
+- Monitor magnesium levels with prolonged use
+
+---
+
+## Cetirizine
+
+### Uses
+- Allergic rhinitis (hay fever)
+- Hives (urticaria)
+- Itching and allergic skin conditions
+- Seasonal and perennial allergies
+
+### General Information
+- Second-generation antihistamine
+- Available as tablets, liquid, and chewable forms
+- Usually taken once daily
+
+### Side Effects
+- Drowsiness (less than first-generation antihistamines)
+- Dry mouth
+- Headache
+- Fatigue
+
+### Warnings
+- May cause drowsiness; use caution when driving
+- Avoid alcohol
+- Adjust dose in kidney disease
+
+---
+
+## Azithromycin
+
+### Uses
+- Respiratory tract infections (bronchitis, pneumonia)
+- Ear infections
+- Skin infections
+- Sexually transmitted infections
+- Typhoid fever
+
+### General Information
+- Macrolide antibiotic
+- Usually taken once daily for 3-5 days
+- Can be taken with or without food
+- Complete the full course
+
+### Side Effects
+- Nausea, vomiting, diarrhea
+- Abdominal pain
+- Headache
+- Rare: hearing changes, liver problems
+
+### Warnings
+- Inform doctor about heart conditions (risk of QT prolongation)
+- May interact with blood thinners and other medications
+- Seek care if severe allergic reaction, irregular heartbeat, or jaundice
+
+---
+
+## Aspirin (Low-Dose)
+
+### Uses
+- Prevention of heart attack and stroke (in high-risk patients as prescribed)
+- Pain relief and fever reduction (higher doses)
+- Anti-inflammatory
+
+### General Information
+- Low-dose (75-100mg) for cardiovascular prevention
+- Take with food to reduce stomach irritation
+
+### Side Effects
+- Stomach irritation and GI bleeding
+- Easy bruising
+- Tinnitus (ringing in ears) at high doses
+
+### Warnings
+- NOT recommended for children (Reye's syndrome risk)
+- Avoid in dengue fever (increases bleeding risk)
+- Do not take with other blood thinners without medical advice
+- Inform surgeon/dentist before procedures
+- Do not start low-dose aspirin without doctor's recommendation
+
+---
+
+## Salbutamol (Albuterol)
+
+### Uses
+- Asthma relief (rescue inhaler)
+- Bronchospasm relief
+- Exercise-induced bronchoconstriction
+- Chronic obstructive pulmonary disease (COPD)
+
+### General Information
+- Short-acting beta-agonist (SABA)
+- Available as metered-dose inhaler, nebulizer solution, tablets
+- Provides quick relief within minutes
+- Carry rescue inhaler at all times if prescribed
+
+### Side Effects
+- Tremor (shaking hands)
+- Rapid heartbeat
+- Headache
+- Nervousness
+- Throat irritation (inhaler)
+
+### Warnings
+- If needing rescue inhaler more than 2 times per week, asthma may be poorly controlled
+- Do not exceed recommended doses
+- Rinse mouth after using inhaler to prevent oral thrush
+- Seek emergency care if no improvement after using inhaler
+
+## CRITICAL REMINDER
+NEVER self-medicate. All medication decisions must be made in consultation with a licensed healthcare professional. Dosages, contraindications, and interactions vary based on individual health conditions.

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Appointments — MediCare Plus</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+    <script th:src="@{/js/app.js}" defer></script>
+</head>
+<body>
+<div class="app-layout">
+    <aside class="app-sidebar">
+        <nav class="sidebar-nav">
+            <a th:href="@{/dashboard}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                <span>Dashboard</span>
+            </a>
+            <a th:href="@{/my-appointments}" class="sidebar-link active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span>My Appointments</span>
+            </a>
+            <a th:href="@{/patient-reports}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg>
+                <span>My Reports</span>
+            </a>
+            <a th:href="@{/my-prescriptions}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path></svg>
+                <span>My Prescriptions</span>
+            </a>
+            <a th:href="@{/settings}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                <span>Settings</span>
+            </a>
+        </nav>
+    </aside>
+
+    <div class="main-content">
+        <header class="top-header-bar">
+            <a th:href="@{/dashboard}" class="top-header-brand">
+                <div class="brand-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                    </svg>
+                </div>
+                <span>MediCare Plus</span>
+            </a>
+            <div class="top-header-actions">
+                <button onclick="toggleTheme()" class="theme-symbol-btn" title="Toggle Light/Dark Theme">
+                    <span id="theme-status-icon">☀️</span>
+                </button>
+                <form th:action="@{/logout}" method="post" style="margin:0;">
+                    <button type="submit" class="button secondary" style="border-radius: 999px; height: 38px; padding: 0 18px;">Logout</button>
+                </form>
+            </div>
+        </header>
+        <main class="page-container" style="max-width: 1000px; margin: 30px auto;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; flex-wrap: wrap; gap: 12px;">
+                <div>
+                    <h1 style="font-size: 1.8rem; font-weight: 800; margin: 0;">My Booked Appointments</h1>
+                    <p style="margin: 4px 0 0; color: var(--muted);">Track consultation schedule, doctor confirmation, and appointment status.</p>
+                </div>
+                <a th:href="@{/appointments/book}" class="btn-pill-primary" style="padding: 10px 20px; font-weight: 700;">+ Book New Appointment</a>
+            </div>
+
+            <div class="notice" th:if="${param.booked}" style="background: rgba(16, 185, 129, 0.1); border-color: #10b981; color: #059669; margin-bottom: 20px;">
+                🎉 Appointment request submitted successfully! Attending doctor will review and confirm your slot.
+            </div>
+
+            <section class="portal-card">
+                <table class="data-table" th:if="${appointments != null && !appointments.isEmpty()}">
+                    <thead>
+                    <tr>
+                        <th>Doctor</th>
+                        <th>Date & Time</th>
+                        <th>Reason / Symptoms</th>
+                        <th>Status</th>
+                        <th>Doctor Notes</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="app : ${appointments}" th:style="${app.emergency ? 'background: rgba(239, 68, 68, 0.05);' : ''}">
+                        <td>
+                            <strong style="color: var(--primary);" th:text="'Dr. ' + (${app.doctorName} ?: 'Specialist Doctor')">Doctor</strong>
+                            <span th:if="${app.emergency}" style="background: #fef2f2; color: #dc2626; border: 1px solid #fca5a5; padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: 800; margin-left: 6px;">🚨 URGENT</span>
+                        </td>
+                        <td>
+                            <div style="font-weight: 700;" th:text="${app.appointmentDate}">Date</div>
+                            <div style="font-size: 0.82rem; color: var(--muted);" th:text="${app.appointmentTime}">Time</div>
+                        </td>
+                        <td th:text="${app.reason ?: 'General Consultation'}">Reason</td>
+                        <td>
+                            <span th:if="${app.status == 'PENDING'}" style="background: #fef3c7; color: #b45309; padding: 4px 10px; border-radius: 999px; font-size: 0.82rem; font-weight: 700;">⏳ Pending Approval</span>
+                            <span th:if="${app.status == 'CONFIRMED'}" style="background: #dcfce7; color: #15803d; padding: 4px 10px; border-radius: 999px; font-size: 0.82rem; font-weight: 700;">✅ Confirmed</span>
+                            <span th:if="${app.status == 'COMPLETED'}" style="background: #e0f2fe; color: #0369a1; padding: 4px 10px; border-radius: 999px; font-size: 0.82rem; font-weight: 700;">🎉 Completed</span>
+                            <span th:if="${app.status == 'CANCELLED'}" style="background: #fee2e2; color: #b91c1c; padding: 4px 10px; border-radius: 999px; font-size: 0.82rem; font-weight: 700;">❌ Cancelled</span>
+                        </td>
+                        <td style="font-size: 0.88rem; color: var(--muted);" th:text="${app.notes ?: '—'}">Notes</td>
+                        <td>
+                            <form th:if="${app.status == 'PENDING' || app.status == 'CONFIRMED'}" th:action="@{/appointments/{id}/cancel(id=${app.id})}" method="post" style="margin: 0;">
+                                <button type="submit" class="button danger" style="min-height: 32px; padding: 0 10px; font-size: 0.8rem;" onclick="return confirm('Cancel this appointment?')">Cancel Slot</button>
+                            </form>
+                            <span th:if="${app.status == 'CANCELLED' || app.status == 'COMPLETED'}" style="color: var(--muted); font-size: 0.85rem;">None</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="empty-state" th:if="${appointments == null || appointments.isEmpty()}">
+                    No appointments booked yet. Click "+ Book New Appointment" to schedule your doctor consultation!
+                </div>
+            </section>
+        </main>
+    </div>
+</div>
+</body>
+</html>

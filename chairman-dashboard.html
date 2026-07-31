@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Dashboard</title>
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<div class="app-shell">
+    <header class="topbar">
+        <div class="brand">Hospital Management System</div>
+        <nav class="nav-actions">
+            <a href="/dashboard">Dashboard</a>
+            <a href="/patients">Patients</a>
+            <a href="/medicines">Medicines</a>
+            <a href="/reports">Reports</a>
+            <a href="/prescriptions">Prescriptions</a>
+            <a href="/doctors">Doctors</a>
+            
+            
+            <form class="logout-form" action="/logout" method="post"><input type="hidden" name="_csrf" value="aisiE4wxwEhhwPL-fupPQwY5Utb8Y4BeEJtSHi9diOd4Sg98DBsRILQEo3xM9MuaScd7JmJdf-_JUbZzdqtrJxxl7t4ZKTke"/>
+                <button type="submit">Logout</button>
+            </form>
+        </nav>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-title">
+            <span class="portal-badge">Chairman Portal</span>
+            <h1>Welcome, Hospital Chairman</h1>
+            <p>Manage hospital work from a focused portal built around your role, permissions, and daily tasks.</p>
+        </div>
+    </section>
+
+    <main class="main">
+        <section class="stats-grid">
+            <div class="stat">
+                <span>Registered patients</span>
+                <strong>1</strong>
+            </div>
+            <div class="stat">
+                <span>Medicines tracked</span>
+                <strong>0</strong>
+            </div>
+            <div class="stat">
+                <span>Medical reports</span>
+                <strong>0</strong>
+            </div>
+        </section>
+
+        <section class="portal-grid">
+            <article class="portal-card chairman">
+                <span>Chairman workspace</span>
+                <h2>Administration overview</h2>
+                <p>Review hospital activity, monitor patient records, and keep medicines and reports organized.</p>
+                <div class="card-actions">
+                    <a class="button" href="/patients">Review Patients</a>
+                    <a class="button secondary" href="/reports">View Reports</a>
+                    <a class="button secondary" href="/doctors">Manage Doctors</a>
+                </div>
+            </article>
+
+            
+
+            
+
+            <article class="portal-card">
+                <span>Quick action</span>
+                <h2>Add patient record</h2>
+                <p>Create a new patient entry with contact details and medical history notes.</p>
+                <div class="card-actions">
+                    <a class="button" href="/patients/new">Add Patient</a>
+                </div>
+            </article>
+
+            <article class="portal-card">
+                <span>Pharmacy</span>
+                <h2>Medicine inventory</h2>
+                <p>Maintain medicine names and dosage guidance for hospital staff reference.</p>
+                <div class="card-actions">
+                    <a class="button" href="/medicines/new">Add Medicine</a>
+                </div>
+            </article>
+
+            <article class="portal-card">
+                <span>Reports</span>
+                <h2>Upload patient reports</h2>
+                <p>Create report records that patients can view and download from their portal.</p>
+                <div class="card-actions">
+                    <a class="button" href="/reports/new">Add Report</a>
+                </div>
+            </article>
+        </section>
+    </main>
+</div>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:text="'Prescription — ' + (${patient != null ? patient.fullName : 'MediCare Plus'})">Digital Prescription — MediCare Plus</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <style>
+        .rx-document {
+            max-width: 850px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 16px;
+            border: 1px solid var(--line);
+            box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+            padding: 40px;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #0f172a;
+        }
+
+        .rx-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 24px;
+        }
+
+        .rx-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .rx-brand-icon {
+            width: 46px;
+            height: 46px;
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .rx-grid-two {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+
+        .rx-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        .rx-table th {
+            background: #eff6ff;
+            color: #1e40af;
+            text-align: left;
+            padding: 12px 14px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            border-bottom: 2px solid #dbeafe;
+        }
+
+        .rx-table td {
+            padding: 14px;
+            border-bottom: 1px solid #e2e8f0;
+            font-size: 0.92rem;
+        }
+
+        .rx-footer {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 2px dashed #cbd5e1;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .action-bar {
+            max-width: 850px;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        @media print {
+            body { background: white !important; }
+            .topbar, .action-bar, .page-hero { display: none !important; }
+            .rx-document {
+                box-shadow: none !important;
+                border: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                max-width: 100% !important;
+            }
+        }
+    </style>
+</head>
+<body style="background: var(--bg-light); min-height: 100vh; padding: 20px 0;">
+
+<div class="action-bar">
+    <button onclick="window.history.back()" class="button secondary">← Back</button>
+    <div style="display: flex; gap: 10px;">
+        <button onclick="downloadPDF()" class="btn-pill-primary" style="height: 42px; font-size: 0.95rem; background: #059669; border: none;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 6px;">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+            </svg>
+            📥 Download PDF File
+        </button>
+        <button onclick="window.print()" class="button secondary" style="height: 42px; font-size: 0.95rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 6px;">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            Print
+        </button>
+    </div>
+</div>
+
+<div class="rx-document" id="prescription-doc">
+    <div class="rx-header">
+        <div class="rx-brand">
+            <div class="rx-brand-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                </svg>
+            </div>
+            <div>
+                <h1 style="margin: 0; font-size: 1.6rem; font-weight: 800; color: #1e3a8a;">MediCare Plus Hospital</h1>
+                <p style="margin: 2px 0 0; color: #64748b; font-size: 0.88rem;">Advanced Multi-Specialty Healthcare & Clinical Care Network</p>
+            </div>
+        </div>
+        <div style="text-align: right; font-size: 0.85rem; color: #475569;">
+            <strong>Emergency & Trauma:</strong> +1 (800) 555-CARE<br>
+            <strong>Email:</strong> support@medicareplus.com<br>
+            <strong>Web:</strong> www.medicareplus.com
+        </div>
+    </div>
+
+    <div class="rx-grid-two">
+        <div>
+            <h3 style="margin: 0 0 8px; font-size: 0.95rem; color: #2563eb; text-transform: uppercase; letter-spacing: 0.05em;">Patient Information</h3>
+            <div id="patient-name-val" style="font-size: 1.1rem; font-weight: 800; color: #0f172a;" th:text="${patient != null ? patient.fullName : 'N/A'}">Patient Name</div>
+            <div style="font-size: 0.88rem; color: #475569; margin-top: 4px;">
+                Contact: <span th:text="${patient != null ? patient.contact : 'N/A'}">Contact</span><br>
+                Medical History: <span th:text="${patient != null && patient.medicalHistory != null ? patient.medicalHistory : 'None Reported'}">History</span>
+            </div>
+        </div>
+
+        <div style="text-align: right;">
+            <h3 style="margin: 0 0 8px; font-size: 0.95rem; color: #2563eb; text-transform: uppercase; letter-spacing: 0.05em;">Prescription Reference</h3>
+            <div style="font-size: 0.9rem; color: #475569;">
+                <strong>Rx ID:</strong> <span th:text="${prescription.id}">ID</span><br>
+                <strong>Date:</strong> <span th:text="${prescription.createdAt != null ? #temporals.format(prescription.createdAt, 'dd MMM yyyy, hh:mm a') : 'Today'}">Date</span><br>
+                <strong>Prescribing Doctor:</strong> Dr. <span th:text="${doctorName}">Doctor Name</span>
+            </div>
+        </div>
+    </div>
+
+    <div th:if="${prescription.diagnosis != null && !prescription.diagnosis.isBlank()}" style="margin-bottom: 24px; padding: 14px 18px; background: #fffbeb; border: 1px solid #fde68a; border-radius: 10px; color: #92400e;">
+        <strong style="font-size: 0.95rem;">Clinical Diagnosis:</strong>
+        <span style="font-weight: 600;" th:text="${prescription.diagnosis}">Diagnosis</span>
+    </div>
+
+    <h2 style="font-size: 1.25rem; font-weight: 800; color: #1e3a8a; margin: 0 0 10px;">Prescribed Medications (Rx)</h2>
+
+    <table class="rx-table">
+        <thead>
+            <tr>
+                <th>Medicine Name</th>
+                <th>Dosage</th>
+                <th>Schedule Timing</th>
+                <th>Food Timing</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="font-weight: 700; color: #1e3a8a;" th:text="${prescription.medicineName}">Medicine</td>
+                <td th:text="${prescription.dosage}">Dosage</td>
+                <td>
+                    <span th:if="${prescription.morning != null && !prescription.morning.isBlank()}">🌅 Morning </span>
+                    <span th:if="${prescription.afternoon != null && !prescription.afternoon.isBlank()}">☀️ Afternoon </span>
+                    <span th:if="${prescription.evening != null && !prescription.evening.isBlank()}">🌆 Evening </span>
+                    <span th:if="${prescription.night != null && !prescription.night.isBlank()}">🌙 Night </span>
+                </td>
+                <td th:text="${prescription.foodTiming ?: 'As advised'}">Food Timing</td>
+                <td th:text="${prescription.duration ?: 'As advised'}">Duration</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div th:if="${prescription.instructions != null && !prescription.instructions.isBlank()}" style="margin-top: 24px; padding: 16px; background: #f8fafc; border-left: 4px solid #2563eb; border-radius: 4px;">
+        <strong style="color: #1e40af; font-size: 0.95rem;">Special Doctor Guidance:</strong>
+        <p style="margin: 6px 0 0; color: #334155; font-size: 0.92rem;" th:text="${prescription.instructions}">Instructions</p>
+    </div>
+
+    <div class="rx-footer">
+        <div>
+            <div th:if="${prescription.followUpDate != null && !prescription.followUpDate.isBlank()}" style="font-size: 0.95rem; font-weight: 700; color: #10b981;">
+                📅 Next Follow-Up Date: <span th:text="${prescription.followUpDate}">Follow-up Date</span>
+            </div>
+            <p style="margin: 6px 0 0; font-size: 0.78rem; color: #94a3b8;">MediCare Plus Digital Healthcare Record System • Valid Official Prescription Document</p>
+        </div>
+
+        <div style="text-align: center;">
+            <div style="font-family: 'Dancing Script', cursive, sans-serif; font-size: 1.4rem; color: #1e3a8a; font-weight: 700; border-bottom: 1px solid #cbd5e1; padding-bottom: 4px;" th:text="'Dr. ' + ${doctorName}">Dr. Signature</div>
+            <div style="font-size: 0.75rem; color: #64748b; margin-top: 4px;">Authorized Digital Signature</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function downloadPDF() {
+        const element = document.getElementById('prescription-doc');
+        const pName = (document.getElementById('patient-name-val')?.innerText || 'Patient').trim().replace(/[^a-zA-Z0-9]/g, '_');
+        const opt = {
+            margin:       [8, 8, 8, 8],
+            filename:     'Prescription_' + pName + '.pdf',
+            image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 2, useCORS: true },
+            jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        };
+        html2pdf().set(opt).from(element).save();
+    }
+
+    // Auto trigger download if ?download=true in URL
+    window.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('download') === 'true') {
+            setTimeout(downloadPDF, 500);
+        }
+    });
+</script>
+</body>
+</html>

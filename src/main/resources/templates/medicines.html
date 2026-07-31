@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicines — MediCare Plus</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+    <script th:src="@{/js/app.js}" defer></script>
+</head>
+<body>
+<div class="app-layout">
+    <aside class="app-sidebar">
+        <nav class="sidebar-nav">
+            <a th:href="@{/dashboard}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                <span>Dashboard</span>
+            </a>
+            <a th:href="@{/appointments}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span>Appointments</span>
+            </a>
+            <a th:href="@{/patients}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                <span>Patients</span>
+            </a>
+            <a th:href="@{/medicines}" class="sidebar-link active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.5 20.5l10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7z"></path></svg>
+                <span>Medicines</span>
+            </a>
+            <a th:href="@{/reports}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg>
+                <span>Reports</span>
+            </a>
+            <a th:href="@{/prescriptions}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path></svg>
+                <span>Prescriptions</span>
+            </a>
+            <a th:href="@{/doctors}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle></svg>
+                <span>Doctors</span>
+            </a>
+            <a th:href="@{/settings}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                <span>Settings</span>
+            </a>
+        </nav>
+    </aside>
+
+    <div class="main-content">
+        <header class="top-header-bar">
+            <a th:href="@{/dashboard}" class="top-header-brand">
+                <div class="brand-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                    </svg>
+                </div>
+                <span>MediCare Plus</span>
+            </a>
+            <div class="top-header-actions">
+                <button onclick="toggleTheme()" class="theme-symbol-btn" title="Toggle Light/Dark Theme">
+                    <span id="theme-status-icon">☀️</span>
+                </button>
+                <form th:action="@{/logout}" method="post" style="margin:0;">
+                    <button type="submit" class="button secondary" style="border-radius: 999px; height: 38px; padding: 0 18px;">Logout</button>
+                </form>
+            </div>
+        </header>
+        <section class="page-hero">
+            <div class="page-title">
+                <span class="portal-badge">Pharmacy Inventory</span>
+                <h1>Medicine Catalog</h1>
+                <p>Maintain medication entries, patient assignments, and daily dosage timing schedules.</p>
+            </div>
+        </section>
+
+        <main class="main">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px;">
+                <h2 style="margin:0; font-size: 1.4rem; font-weight: 800;">Prescribed Medicines</h2>
+                <a class="btn-pill-primary" th:href="@{/medicines/new}">+ Add Medicine Entry</a>
+            </div>
+
+            <section class="table-card">
+                <table th:if="${!medicines.isEmpty()}">
+                    <thead>
+                    <tr>
+                        <th>Patient</th>
+                        <th>Medicine</th>
+                        <th>Dosage</th>
+                        <th>Morning</th>
+                        <th>Afternoon</th>
+                        <th>Evening</th>
+                        <th>Night</th>
+                        <th>Food Instructions</th>
+                        <th>Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="medicine : ${medicines}">
+                        <td style="font-weight: 700;" th:text="${medicine.patient != null ? medicine.patient.fullName : 'N/A'}">Patient</td>
+                        <td th:text="${medicine.name}" style="color: var(--primary); font-weight: 700;">Medicine</td>
+                        <td th:text="${medicine.dosage}">Dosage</td>
+                        <td><span class="pill" th:if="${medicine.morning == '1'}">Yes</span><span style="color:var(--muted);" th:if="${medicine.morning != '1'}">No</span></td>
+                        <td><span class="pill" th:if="${medicine.afternoon == '1'}">Yes</span><span style="color:var(--muted);" th:if="${medicine.afternoon != '1'}">No</span></td>
+                        <td><span class="pill" th:if="${medicine.evening == '1'}">Yes</span><span style="color:var(--muted);" th:if="${medicine.evening != '1'}">No</span></td>
+                        <td><span class="pill" th:if="${medicine.night == '1'}">Yes</span><span style="color:var(--muted);" th:if="${medicine.night != '1'}">No</span></td>
+                        <td th:text="${medicine.foodTiming ?: 'Standard'}">Food Timing</td>
+                        <td>
+                            <div style="display: flex; gap: 8px;">
+                                <a class="button secondary" style="min-height: 32px; padding: 0 12px; font-size: 0.82rem;" th:href="@{/medicines/{id}/edit(id=${medicine.id})}">Edit</a>
+                                <a class="button danger" style="min-height: 32px; padding: 0 12px; font-size: 0.82rem;" th:href="@{/medicines/{id}/delete(id=${medicine.id})}">Delete</a>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="empty-state" th:if="${medicines.isEmpty()}">No medicines recorded yet.</div>
+            </section>
+        </main>
+    </div>
+</div>
+</body>
+</html>

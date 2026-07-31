@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Doctor — MediCare Plus</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+    <script th:src="@{/js/app.js}" defer></script>
+</head>
+<body>
+<div class="app-layout">
+    <aside class="app-sidebar">
+        <nav class="sidebar-nav">
+            <a th:href="@{/dashboard}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                <span>Dashboard</span>
+            </a>
+            <a th:href="@{/appointments}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span>Appointments</span>
+            </a>
+            <a th:href="@{/patients}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+                <span>Patients</span>
+            </a>
+            <a th:href="@{/medicines}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.5 20.5l10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7z"></path></svg>
+                <span>Medicines</span>
+            </a>
+            <a th:href="@{/reports}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg>
+                <span>Reports</span>
+            </a>
+            <a th:href="@{/prescriptions}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path></svg>
+                <span>Prescriptions</span>
+            </a>
+            <a th:href="@{/doctors}" class="sidebar-link active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle></svg>
+                <span>Doctors</span>
+            </a>
+            <a th:href="@{/settings}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                <span>Settings</span>
+            </a>
+        </nav>
+    </aside>
+
+    <div class="main-content">
+        <header class="top-header-bar">
+            <a th:href="@{/dashboard}" class="top-header-brand">
+                <div class="brand-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                    </svg>
+                </div>
+                <span>MediCare Plus</span>
+            </a>
+            <div class="top-header-actions">
+                <button onclick="toggleTheme()" class="theme-symbol-btn" title="Toggle Light/Dark Theme">
+                    <span id="theme-status-icon">☀️</span>
+                </button>
+                <form th:action="@{/logout}" method="post" style="margin:0;">
+                    <button type="submit" class="button secondary" style="border-radius: 999px; height: 38px; padding: 0 18px;">Logout</button>
+                </form>
+            </div>
+        </header>
+        <section class="page-hero">
+            <div class="page-title">
+                <span class="portal-badge">Chairman Portal</span>
+                <h1>Onboard Doctor Account</h1>
+                <p>Create a verified clinical login account for hospital staff doctors.</p>
+            </div>
+        </section>
+
+        <main class="main">
+            <section class="portal-card" style="max-width: 800px; margin: 0 auto;">
+                <form class="form-grid" th:action="@{/doctors}" th:object="${doctor}" method="post">
+                    <div class="errors" th:if="${#fields.hasErrors('*')}">
+                        <div th:each="error : ${#fields.errors('*')}" th:text="${error}">Please check the input errors.</div>
+                    </div>
+
+                    <div class="field">
+                        <label for="fullName">Doctor Full Name</label>
+                        <input id="fullName" th:field="*{fullName}" placeholder="e.g. Dr. Alice Morgan" required>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                        <div class="field">
+                            <label for="username">Doctor Username</label>
+                            <input id="username" th:field="*{username}" placeholder="e.g. doctor_alice" required>
+                        </div>
+                        <div class="field">
+                            <label for="password">Initial Password</label>
+                            <input id="password" type="password" th:field="*{password}" placeholder="Create password" required>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                        <div class="field">
+                            <label for="email">Email Address</label>
+                            <input id="email" type="email" th:field="*{email}" placeholder="doctor@medicareplus.com" required>
+                        </div>
+                        <div class="field">
+                            <label for="phone">Mobile Number (10 Digits)</label>
+                            <div style="display: flex; gap: 6px;">
+                                <select name="countryCode" style="width: 95px; flex-shrink: 0; padding: 10px; border: 1px solid var(--line); border-radius: 8px; font-weight: 600; background: var(--surface);">
+                                    <option value="+91">🇮🇳 +91</option>
+                                    <option value="+1">🇺🇸 +1</option>
+                                    <option value="+44">🇬🇧 +44</option>
+                                    <option value="+61">🇦🇺 +61</option>
+                                    <option value="+971">🇦🇪 +971</option>
+                                </select>
+                                <input id="phone" th:field="*{phone}" type="tel" maxlength="10" minlength="10" pattern="[0-9]{10}" inputmode="numeric" placeholder="9876543210" title="Please enter 10 digits" required style="flex: 1;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-actions" style="margin-top: 12px;">
+                        <button type="submit" class="btn-pill-primary">Create Doctor Account</button>
+                        <a class="button secondary" th:href="@{/doctors}">Cancel</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</div>
+</body>
+</html>

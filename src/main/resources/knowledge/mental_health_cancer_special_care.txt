@@ -1,0 +1,273 @@
+# Mental Health, Cancer, & Arthritis Guide (WHO/NIH/CDC)
+
+## Depression
+
+### Overview
+Depression (Major Depressive Disorder) is a common and serious mental health condition that negatively affects how you feel, think, and act. It causes persistent feelings of sadness and loss of interest in activities. It is treatable.
+
+### Symptoms (present for at least 2 weeks)
+- Persistent sadness, emptiness, or hopelessness
+- Loss of interest or pleasure in activities once enjoyed
+- Changes in appetite (weight loss or gain)
+- Sleep disturbances (insomnia or oversleeping)
+- Fatigue and loss of energy
+- Feelings of worthlessness or excessive guilt
+- Difficulty concentrating, making decisions
+- Restlessness or feeling slowed down
+- Recurrent thoughts of death or suicide
+
+### Risk Factors
+- Family history of depression
+- Trauma or stressful life events
+- Chronic medical conditions (diabetes, heart disease, chronic pain)
+- Certain medications
+- Substance abuse
+- Social isolation
+- Hormonal changes (postpartum, menopause)
+
+### When to Seek Immediate Help
+- Thoughts of self-harm or suicide
+- Making plans to end one's life
+- Feeling like a burden to others
+- Giving away possessions
+- **If you or someone you know is in crisis, contact emergency services immediately or call a crisis helpline.**
+
+### Treatment
+- Psychotherapy (Cognitive Behavioral Therapy — CBT, Interpersonal Therapy)
+- Antidepressant medications (SSRIs: Sertraline, Fluoxetine; SNRIs: Venlafaxine)
+- Combination of therapy and medication is most effective
+- Regular exercise and physical activity
+- Social support and connection
+- Mindfulness and stress reduction techniques
+- Adequate sleep hygiene
+
+---
+
+## Anxiety Disorders
+
+### Overview
+Anxiety disorders involve excessive worry, fear, or nervousness that interferes with daily life. They are the most common mental health disorders worldwide.
+
+### Types
+- **Generalized Anxiety Disorder (GAD):** Persistent, excessive worry about various aspects of life
+- **Panic Disorder:** Recurrent unexpected panic attacks
+- **Social Anxiety Disorder:** Intense fear of social situations
+- **Specific Phobias:** Intense fear of specific objects or situations
+- **Obsessive-Compulsive Disorder (OCD):** Unwanted repetitive thoughts and behaviors
+- **Post-Traumatic Stress Disorder (PTSD):** Following traumatic events
+
+### Symptoms
+- Excessive worrying
+- Restlessness and feeling on edge
+- Rapid heartbeat and palpitations
+- Sweating, trembling, shaking
+- Shortness of breath
+- Chest tightness
+- Dizziness and lightheadedness
+- Difficulty sleeping
+- Muscle tension
+- Difficulty concentrating
+- Irritability
+- Panic attacks: sudden intense fear with physical symptoms
+
+### Treatment
+- Cognitive Behavioral Therapy (CBT)
+- Exposure therapy
+- Medications: SSRIs, SNRIs, Buspirone, Benzodiazepines (short-term only)
+- Relaxation techniques: deep breathing, progressive muscle relaxation
+- Regular exercise
+- Limiting caffeine and alcohol
+- Mindfulness meditation
+
+---
+
+## Cancer
+
+### Overview
+Cancer is a group of diseases characterized by uncontrolled growth and spread of abnormal cells. If the spread is not controlled, it can result in death. Cancer can affect almost any organ in the body.
+
+### Common Types
+- Breast cancer
+- Lung cancer
+- Colorectal cancer
+- Prostate cancer
+- Cervical cancer
+- Stomach cancer
+- Liver cancer
+- Leukemia (blood cancer)
+- Lymphoma
+- Skin cancer (melanoma)
+
+### General Warning Signs
+- Unexplained weight loss
+- Persistent fatigue not relieved by rest
+- Unexplained pain that does not go away
+- Changes in skin (new moles, changes in existing moles, non-healing sores)
+- Change in bowel or bladder habits
+- Unusual bleeding or discharge
+- Lump or thickening in breast or other body parts
+- Difficulty swallowing or persistent indigestion
+- Persistent cough or hoarseness
+- Unexplained fever
+
+### Risk Factors
+- Tobacco use (leading preventable cause)
+- Excessive alcohol consumption
+- Obesity and poor diet
+- Physical inactivity
+- Excessive sun/UV exposure
+- Family history and genetic mutations (BRCA1, BRCA2)
+- Chronic infections (HPV, Hepatitis B/C, H. pylori)
+- Environmental exposures (asbestos, benzene, radiation)
+- Age (risk increases with age)
+
+### Screening and Early Detection
+- Mammography for breast cancer (women over 40)
+- Pap smear and HPV test for cervical cancer
+- Colonoscopy for colorectal cancer (adults over 45)
+- PSA test for prostate cancer
+- Low-dose CT scan for lung cancer (high-risk smokers)
+- Self-examination for skin changes
+
+### Treatment Options
+- Surgery (tumor removal)
+- Chemotherapy
+- Radiation therapy
+- Immunotherapy
+- Targeted therapy
+- Hormone therapy
+- Stem cell transplant
+- Palliative care for advanced cases
+
+### Prevention
+- Avoid tobacco in all forms
+- Maintain healthy weight
+- Regular physical activity
+- Healthy diet rich in fruits and vegetables
+- Limit alcohol
+- Protect skin from excessive sun exposure
+- Get vaccinated (HPV, Hepatitis B)
+- Regular screening as recommended
+
+---
+
+## Arthritis
+
+### Overview
+Arthritis is inflammation of one or more joints, causing pain and stiffness. There are over 100 types of arthritis. The two most common are Osteoarthritis (OA) and Rheumatoid Arthritis (RA).
+
+### Osteoarthritis (OA)
+- Most common form; degenerative joint disease
+- Caused by wear and tear of joint cartilage over time
+- Commonly affects knees, hips, hands, and spine
+- Symptoms: joint pain, stiffness (especially in morning or after inactivity), swelling, reduced range of motion
+- Risk factors: age, obesity, joint injuries, repetitive stress, genetics
+
+### Rheumatoid Arthritis (RA)
+- Autoimmune disease where immune system attacks joint lining
+- Affects joints symmetrically (both hands, both knees)
+- Symptoms: joint pain, swelling, warmth, morning stiffness lasting over 1 hour, fatigue, fever
+- Can affect other organs: lungs, heart, eyes
+- More common in women
+
+### Diagnosis
+- Physical examination
+- Blood tests: ESR, CRP, Rheumatoid Factor (RF), Anti-CCP antibodies
+- X-rays of affected joints
+- MRI for detailed joint assessment
+- Joint fluid analysis (arthrocentesis)
+
+### Treatment
+- Pain management: NSAIDs (Ibuprofen, Naproxen), Acetaminophen
+- Disease-modifying drugs (DMARDs): Methotrexate, Hydroxychloroquine (for RA)
+- Biologic agents: Adalimumab, Etanercept (for severe RA)
+- Corticosteroid injections
+- Physical therapy and regular exercise
+- Weight management
+- Joint replacement surgery for severe cases
+- Hot/cold therapy for pain relief
+
+---
+
+## Pregnancy Care
+
+### Overview
+Pregnancy lasts approximately 40 weeks (9 months) from the last menstrual period. Proper prenatal care is essential for the health of both mother and baby.
+
+### Trimester Guide
+- **First Trimester (Weeks 1-12):** Embryo development, organ formation. Common symptoms: nausea (morning sickness), fatigue, breast tenderness, frequent urination.
+- **Second Trimester (Weeks 13-26):** Fetal growth, movement felt. Symptoms: reduced nausea, backache, skin changes, increased appetite.
+- **Third Trimester (Weeks 27-40):** Rapid fetal growth, preparation for delivery. Symptoms: shortness of breath, swollen ankles, Braxton-Hicks contractions, difficulty sleeping.
+
+### Essential Prenatal Tests
+- Complete Blood Count (CBC)
+- Blood group and Rh factor
+- Blood sugar (gestational diabetes screening at 24-28 weeks)
+- Urine tests (protein, sugar, infections)
+- Ultrasound (dating scan, anomaly scan at 18-20 weeks)
+- HIV, Hepatitis B, syphilis screening
+- Thyroid function test
+
+### Diet During Pregnancy
+- Folic acid (400-800 mcg daily): prevents neural tube defects
+- Iron-rich foods: spinach, red meat, fortified cereals
+- Calcium: dairy products, green leafy vegetables
+- Protein: lean meats, eggs, legumes, nuts
+- Omega-3 fatty acids: fish (avoid high-mercury fish)
+- Avoid: raw/undercooked meat, unpasteurized dairy, excessive caffeine, alcohol, smoking
+
+### Warning Signs Requiring Immediate Medical Attention
+- Vaginal bleeding
+- Severe headache with vision changes
+- Sudden swelling of face and hands (preeclampsia)
+- Severe abdominal pain
+- Reduced fetal movement
+- Leaking of amniotic fluid
+- High fever
+- Persistent vomiting
+
+---
+
+## Child Care & Pediatric Health
+
+### Vaccination Schedule (General WHO Guidelines)
+- Birth: BCG, Hepatitis B (first dose), OPV (zero dose)
+- 6 weeks: DPT, IPV, Hepatitis B, Rotavirus, PCV
+- 10 weeks: DPT, IPV, Rotavirus, PCV
+- 14 weeks: DPT, IPV, Hepatitis B, Rotavirus, PCV
+- 9 months: Measles-Rubella (MR) or MMR, Vitamin A
+- 12-15 months: MMR booster, Varicella
+- 16-24 months: DPT booster, OPV booster
+- 4-6 years: DPT booster, MMR booster
+
+### Common Childhood Illnesses
+- **Fever in Children:** Give age-appropriate paracetamol. Seek immediate care if fever is above 104°F in children or any fever in infants under 3 months.
+- **Diarrhea:** Oral Rehydration Solution (ORS). Continue breastfeeding. Seek care if blood in stool, signs of dehydration, or lasting more than 3 days.
+- **Common Cold:** Supportive care. Steam inhalation for older children. Honey for cough (children over 1 year only).
+- **Ear Infections:** Pain management, antibiotics if bacterial. See doctor if persistent.
+
+---
+
+## Elder Care
+
+### Common Health Concerns in Elderly
+- Falls and fractures (osteoporosis)
+- Cognitive decline and dementia
+- Heart disease and hypertension
+- Diabetes management
+- Vision and hearing loss
+- Urinary incontinence
+- Depression and social isolation
+- Medication management (polypharmacy risks)
+
+### Preventive Measures
+- Regular health checkups
+- Fall prevention: remove tripping hazards, adequate lighting, assistive devices
+- Physical activity: walking, gentle exercises, balance training
+- Social engagement and mental stimulation
+- Proper nutrition and hydration
+- Medication review with healthcare provider
+- Vaccinations: influenza (annual), pneumococcal, herpes zoster
+
+## Medical Disclaimer
+This information is for educational purposes only. It does not substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider for personalized medical guidance.

@@ -1,0 +1,294 @@
+# Comprehensive Disease Guide — Part 2: Infectious & Tropical Diseases (WHO/CDC/NIH)
+
+## Dengue Fever
+
+### Overview
+Dengue is a mosquito-borne viral infection caused by the dengue virus (DENV). Transmitted primarily by Aedes aegypti mosquitoes. Endemic in tropical and subtropical regions. Can range from mild flu-like illness to severe dengue (dengue hemorrhagic fever).
+
+### Symptoms
+- High fever (104°F / 40°C)
+- Severe headache (especially behind the eyes)
+- Joint and muscle pain (breakbone fever)
+- Nausea and vomiting
+- Skin rash (appears 2-5 days after fever onset)
+- Mild bleeding (nose, gums, easy bruising)
+- Fatigue and weakness
+
+### Severe Dengue Warning Signs
+- Severe abdominal pain
+- Persistent vomiting
+- Rapid breathing
+- Bleeding gums or blood in vomit/stool
+- Restlessness or lethargy
+- Liver enlargement
+- Decrease in platelet count (below 100,000)
+
+### Diagnosis
+- NS1 Antigen Test (detectable within first 5 days)
+- Dengue IgM/IgG Antibody Test
+- Complete Blood Count (CBC): low platelet count, rising hematocrit
+- Liver function tests
+
+### Treatment
+- No specific antiviral medication exists
+- Supportive care: rest, hydration, fever management
+- Paracetamol for fever and pain (AVOID aspirin and ibuprofen)
+- Monitor platelet count daily
+- Hospital admission if platelets drop below 50,000
+
+### Prevention
+- Eliminate mosquito breeding sites (stagnant water)
+- Use mosquito repellent and nets
+- Wear long-sleeved clothing
+- Use window screens
+- Community fogging and larviciding
+
+---
+
+## Malaria
+
+### Overview
+Malaria is a life-threatening parasitic disease caused by Plasmodium parasites transmitted through the bites of infected female Anopheles mosquitoes. Five species infect humans: P. falciparum (most dangerous), P. vivax, P. ovale, P. malariae, and P. knowlesi.
+
+### Symptoms (appear 10-15 days after mosquito bite)
+- Cyclical fever with chills and sweating
+- Severe headache
+- Muscle aches and fatigue
+- Nausea, vomiting, and diarrhea
+- Anemia (due to red blood cell destruction)
+- Jaundice (yellowing of skin and eyes)
+
+### Severe Malaria Symptoms (Emergency)
+- Cerebral malaria: confusion, seizures, coma
+- Severe anemia
+- Respiratory distress
+- Organ failure (kidneys, liver)
+- Hypoglycemia
+
+### Diagnosis
+- Peripheral blood smear (gold standard)
+- Rapid Diagnostic Test (RDT)
+- Complete blood count showing anemia and thrombocytopenia
+
+### Treatment
+- Artemisinin-based Combination Therapy (ACT) for P. falciparum
+- Chloroquine for P. vivax (where still effective)
+- Primaquine for liver-stage parasites (P. vivax/ovale)
+- IV artesunate for severe malaria (emergency)
+- Supportive care: fluids, blood transfusion if severely anemic
+
+### Prevention
+- Insecticide-treated mosquito nets
+- Indoor residual spraying
+- Antimalarial prophylaxis for travelers
+- Environmental management to reduce mosquito breeding
+
+---
+
+## Typhoid Fever
+
+### Overview
+Typhoid fever is a bacterial infection caused by Salmonella typhi. Spread through contaminated food and water. Common in areas with poor sanitation. Can be life-threatening if untreated.
+
+### Symptoms (develop 1-3 weeks after exposure)
+- Sustained high fever (103-104°F) that rises stepwise
+- Headache
+- Abdominal pain and tenderness
+- Constipation or diarrhea
+- Loss of appetite
+- Rose-colored spots on chest and abdomen
+- Enlarged spleen and liver
+- Weakness and fatigue
+
+### Complications
+- Intestinal perforation (surgical emergency)
+- Intestinal hemorrhage
+- Encephalitis (brain inflammation)
+- Myocarditis (heart inflammation)
+- Kidney failure
+
+### Diagnosis
+- Widal Test (antibody detection, less specific)
+- Blood culture (gold standard)
+- Typhidot IgM Test
+- Complete blood count: leukopenia (low white blood cells)
+
+### Treatment
+- Antibiotics: Azithromycin, Ceftriaxone, or Fluoroquinolones
+- Adequate fluid intake and rest
+- Soft, easily digestible diet
+- Hospital admission for severe cases
+
+### Prevention
+- Drink safe, purified water
+- Wash hands frequently with soap
+- Eat properly cooked food
+- Typhoid vaccination (Vi capsular polysaccharide or Ty21a)
+- Avoid street food in endemic areas
+
+---
+
+## COVID-19 (SARS-CoV-2)
+
+### Overview
+COVID-19 is a respiratory illness caused by the SARS-CoV-2 coronavirus. First identified in December 2019. Spreads primarily through respiratory droplets and aerosols. Severity ranges from asymptomatic to critical illness and death.
+
+### Symptoms
+- Fever or chills
+- Cough (usually dry)
+- Shortness of breath or difficulty breathing
+- Fatigue and body aches
+- Loss of taste or smell (anosmia)
+- Sore throat
+- Congestion or runny nose
+- Nausea, vomiting, or diarrhea
+- Headache
+
+### Emergency Warning Signs (Seek immediate care)
+- Persistent chest pain or pressure
+- Difficulty breathing or shortness of breath
+- Confusion or inability to stay awake
+- Bluish lips or face (cyanosis)
+- Oxygen saturation below 94%
+
+### Diagnosis
+- RT-PCR test (nasopharyngeal swab, gold standard)
+- Rapid Antigen Test (RAT)
+- CT scan of chest (ground-glass opacities)
+- Blood tests: D-dimer, CRP, ferritin, LDH, CBC
+
+### Treatment
+- Mild cases: rest, hydration, paracetamol, isolation
+- Moderate: antiviral medications (Paxlovid, Molnupiravir), oxygen therapy
+- Severe: remdesivir, corticosteroids (dexamethasone), prone positioning
+- Critical: ICU admission, mechanical ventilation, anticoagulation
+
+### Prevention
+- Vaccination (follow WHO/local health authority guidelines)
+- Mask wearing in high-risk settings
+- Hand hygiene
+- Social distancing
+- Ventilation in indoor spaces
+
+---
+
+## Influenza (Flu)
+
+### Overview
+Influenza is a contagious respiratory illness caused by influenza viruses (Type A and Type B). Seasonal outbreaks occur yearly. Can cause mild to severe illness. High-risk groups include elderly, young children, pregnant women, and immunocompromised individuals.
+
+### Symptoms
+- Sudden onset of high fever (100-104°F)
+- Chills and body aches
+- Dry, persistent cough
+- Sore throat
+- Runny or stuffy nose
+- Headache
+- Extreme fatigue
+- Muscle and joint pain
+
+### Complications
+- Pneumonia (viral or secondary bacterial)
+- Bronchitis
+- Sinus and ear infections
+- Myocarditis
+- Worsening of chronic conditions (asthma, diabetes, heart disease)
+
+### Treatment
+- Antiviral medications: Oseltamivir (Tamiflu), Zanamivir (Relenza) — most effective within 48 hours
+- Rest and hydration
+- Paracetamol or ibuprofen for fever and pain
+- Avoid antibiotics (ineffective against viruses unless secondary bacterial infection)
+
+### Prevention
+- Annual influenza vaccination
+- Hand washing
+- Cover coughs and sneezes
+- Avoid close contact with sick individuals
+- Stay home when ill
+
+---
+
+## Tuberculosis (TB)
+
+### Overview
+Tuberculosis is a bacterial infection caused by Mycobacterium tuberculosis. Primarily affects the lungs (pulmonary TB) but can affect other organs (extrapulmonary TB). Spread through airborne droplets when an infected person coughs, sneezes, or speaks.
+
+### Types
+- **Latent TB:** Person is infected but not sick, not contagious, no symptoms. Can become active if untreated.
+- **Active TB:** Person is sick and contagious. Shows symptoms.
+
+### Symptoms of Active Pulmonary TB
+- Persistent cough lasting more than 3 weeks
+- Coughing up blood or sputum (hemoptysis)
+- Chest pain
+- Unintentional weight loss
+- Night sweats
+- Fever (especially evening rise)
+- Fatigue and loss of appetite
+
+### Diagnosis
+- Mantoux tuberculin skin test (TST)
+- Interferon-Gamma Release Assay (IGRA) blood test
+- Sputum smear microscopy (AFB stain)
+- Chest X-ray (cavitations, infiltrates)
+- GeneXpert/MTB-RIF test (detects TB DNA and rifampicin resistance)
+- Sputum culture (gold standard, takes 2-8 weeks)
+
+### Treatment
+- DOTS (Directly Observed Therapy, Short-course) — WHO recommended
+- Standard regimen: 2 months of Isoniazid + Rifampicin + Pyrazinamide + Ethambutol (HRZE), followed by 4 months of Isoniazid + Rifampicin (HR)
+- MDR-TB: requires second-line drugs for 9-20 months
+- Complete the full course even if symptoms improve early
+
+### Prevention
+- BCG vaccination (given at birth in endemic countries)
+- Screening of close contacts
+- Infection control measures in healthcare settings
+- Treatment of latent TB in high-risk individuals
+
+---
+
+## Pneumonia
+
+### Overview
+Pneumonia is an infection that inflames the air sacs (alveoli) in one or both lungs. Can be caused by bacteria, viruses, or fungi. The air sacs may fill with fluid or pus, causing cough with phlegm, fever, chills, and difficulty breathing.
+
+### Common Causes
+- **Bacterial:** Streptococcus pneumoniae (most common), Haemophilus influenzae, Klebsiella
+- **Viral:** Influenza, RSV, SARS-CoV-2
+- **Fungal:** Pneumocystis jirovecii (in immunocompromised patients)
+- **Aspiration:** Inhaling food, drink, or saliva into the lungs
+
+### Symptoms
+- Cough with phlegm (yellow, green, or bloody)
+- High fever with chills and sweating
+- Shortness of breath
+- Chest pain that worsens with breathing or coughing
+- Fatigue and loss of appetite
+- Confusion (especially in elderly)
+- Nausea, vomiting, diarrhea
+
+### Diagnosis
+- Chest X-ray (consolidation patterns)
+- Blood tests: CBC, CRP, procalcitonin
+- Sputum culture and sensitivity
+- Pulse oximetry (oxygen saturation)
+- CT scan for complicated cases
+
+### Treatment
+- Antibiotics for bacterial pneumonia (Amoxicillin, Azithromycin, Levofloxacin)
+- Antiviral medications for viral pneumonia
+- Oxygen therapy if saturation below 94%
+- Adequate hydration and rest
+- Hospitalization for severe cases (ICU if respiratory failure)
+
+### Prevention
+- Pneumococcal vaccination
+- Annual influenza vaccination
+- Good hygiene practices
+- Avoid smoking
+- Manage chronic conditions
+
+## Medical Disclaimer
+This information is for educational purposes only. It does not substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider for personalized medical guidance.

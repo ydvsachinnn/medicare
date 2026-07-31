@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment — MediCare Plus</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+    <script th:src="@{/js/app.js}" defer></script>
+</head>
+<body>
+<div class="app-layout">
+    <aside class="app-sidebar">
+        <nav class="sidebar-nav">
+            <a th:href="@{/dashboard}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                <span>Dashboard</span>
+            </a>
+            <a th:href="@{/my-appointments}" class="sidebar-link active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span>Appointments</span>
+            </a>
+            <a th:href="@{/patient-reports}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg>
+                <span>My Reports</span>
+            </a>
+            <a th:href="@{/my-prescriptions}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path></svg>
+                <span>My Prescriptions</span>
+            </a>
+            <a th:href="@{/settings}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                <span>Settings</span>
+            </a>
+        </nav>
+    </aside>
+
+    <div class="main-content">
+        <header class="top-header-bar">
+            <a th:href="@{/dashboard}" class="top-header-brand">
+                <div class="brand-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                    </svg>
+                </div>
+                <span>MediCare Plus</span>
+            </a>
+            <div class="top-header-actions">
+                <button onclick="toggleTheme()" class="theme-symbol-btn" title="Toggle Light/Dark Theme">
+                    <span id="theme-status-icon">☀️</span>
+                </button>
+                <form th:action="@{/logout}" method="post" style="margin:0;">
+                    <button type="submit" class="button secondary" style="border-radius: 999px; height: 38px; padding: 0 18px;">Logout</button>
+                </form>
+            </div>
+        </header>
+        <main class="page-container" style="max-width: 760px; margin: 40px auto;">
+            <section class="portal-card">
+                <span class="eyebrow" style="color: #2563eb;">Digital Consultation</span>
+                <h1 style="font-size: 1.8rem; font-weight: 800; margin: 4px 0 16px;">Book Doctor Appointment</h1>
+                <p style="color: var(--muted); margin-bottom: 24px;">Select your preferred specialist doctor, date, and convenient time slot for consultation.</p>
+
+                <form th:action="@{/appointments/book}" th:object="${appointment}" method="post" class="form-grid">
+                    
+                    <div class="field" th:if="${userRole == 'DOCTOR' || userRole == 'CHAIRMAN'}">
+                        <label for="patientUsername">Select Patient</label>
+                        <select id="patientUsername" th:field="*{patientUsername}" required style="width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); font-weight: 600;">
+                            <option value="">-- Choose Patient --</option>
+                            <option th:each="pat : ${patients}" th:value="${pat.patientUsername != null ? pat.patientUsername : pat.fullName}" th:text="${pat.fullName} + ' (' + (${pat.contact} ?: 'No Contact') + ')'"></option>
+                        </select>
+                    </div>
+
+                    <div class="field">
+                        <label for="doctorId">Select Specialist Doctor</label>
+                        <select id="doctorId" th:field="*{doctorId}" required style="width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); font-weight: 600;">
+                            <option value="">-- Choose Attending Doctor --</option>
+                            <option th:each="doc : ${doctors}" th:value="${doc.id}" th:text="'Dr. ' + ${doc.fullName} + ' (' + (${doc.email} ?: 'Specialist') + ')'"></option>
+                        </select>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                        <div class="field">
+                            <label for="appointmentDate">Appointment Date</label>
+                            <input id="appointmentDate" type="date" th:field="*{appointmentDate}" onclick="this.showPicker()" required style="width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 10px; cursor: pointer;">
+                        </div>
+                        <div class="field">
+                            <label for="appointmentTime">Preferred Time Slot</label>
+                            <select id="appointmentTime" th:field="*{appointmentTime}" required style="width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); font-weight: 600;">
+                                <option value="">-- Select Time Slot --</option>
+                                <option value="09:00 AM">09:00 AM - Morning</option>
+                                <option value="10:30 AM">10:30 AM - Morning</option>
+                                <option value="11:45 AM">11:45 AM - Morning</option>
+                                <option value="02:00 PM">02:00 PM - Afternoon</option>
+                                <option value="03:30 PM">03:30 PM - Afternoon</option>
+                                <option value="05:00 PM">05:00 PM - Evening</option>
+                                <option value="06:30 PM">06:30 PM - Evening</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="reason">Reason for Visit / Main Symptoms</label>
+                        <textarea id="reason" th:field="*{reason}" rows="3" placeholder="Briefly describe health concerns, symptoms, or consultation goals..." style="width: 100%; padding: 12px; border: 1px solid var(--line); border-radius: 10px; font-family: inherit;"></textarea>
+                    </div>
+
+                    <div class="field" style="background: rgba(239, 68, 68, 0.1); border: 1.5px solid #ef4444; padding: 14px; border-radius: 12px; margin-bottom: 8px;">
+                        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer; color: #ef4444; font-weight: 700; font-size: 0.98rem; margin: 0;">
+                            <input type="checkbox" th:field="*{emergency}" style="width: 20px; height: 20px; accent-color: #dc2626;">
+                            <span>🚨 Mark as Urgent Emergency Booking (Triggers Immediate Doctor Alert)</span>
+                        </label>
+                    </div>
+
+                    <div style="display: flex; gap: 12px; margin-top: 12px;">
+                        <button type="submit" class="btn-pill-primary" style="height: 46px; font-size: 1rem; flex: 1;">Confirm & Schedule Appointment</button>
+                        <a th:href="@{/dashboard}" class="button secondary" style="height: 46px; display: flex; align-items: center; justify-content: justify; padding: 0 20px;">Cancel</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</div>
+</body>
+</html>

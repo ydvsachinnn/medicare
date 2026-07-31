@@ -1,0 +1,329 @@
+# Comprehensive Disease Guide — Part 3: Heart, Brain, Kidney, Liver & Respiratory Diseases (WHO/NIH/CDC)
+
+## Heart Disease (Cardiovascular Disease)
+
+### Overview
+Heart disease refers to a range of conditions that affect the heart, including coronary artery disease (CAD), heart failure, arrhythmias, and valvular heart disease. It is the leading cause of death worldwide.
+
+### Coronary Artery Disease (CAD)
+- Most common type of heart disease
+- Caused by plaque buildup in the coronary arteries (atherosclerosis)
+- Reduces blood flow to the heart muscle
+
+### Symptoms
+- Chest pain or discomfort (angina) — pressure, squeezing, or tightness
+- Shortness of breath
+- Pain radiating to arm, neck, jaw, shoulder, or back
+- Fatigue and weakness
+- Dizziness or lightheadedness
+- Irregular heartbeat (palpitations)
+- Swelling in legs, ankles, and feet (heart failure)
+
+### Risk Factors
+- High blood pressure
+- High cholesterol (LDL)
+- Diabetes
+- Smoking
+- Obesity
+- Family history
+- Sedentary lifestyle
+- Excessive alcohol consumption
+- Chronic stress
+
+### Diagnosis
+- ECG (Electrocardiogram)
+- Echocardiogram
+- Stress test (treadmill test)
+- Coronary angiography
+- Blood tests: Troponin, BNP, lipid profile
+- CT coronary angiogram
+
+### Treatment
+- Lifestyle modifications
+- Medications: Statins, ACE inhibitors, beta-blockers, antiplatelet agents (aspirin, clopidogrel)
+- Angioplasty with stent placement
+- Coronary artery bypass grafting (CABG)
+- Cardiac rehabilitation
+
+### Diet for Heart Health
+- Mediterranean diet: olive oil, fish, whole grains, fruits, vegetables
+- Omega-3 fatty acids: salmon, mackerel, walnuts, flaxseeds
+- Limit saturated fats, trans fats, and sodium
+- Avoid processed meats and fried foods
+- Increase fiber intake
+- Limit added sugars
+
+### Emergency Signs (Heart Attack)
+- Crushing chest pain lasting more than a few minutes
+- Pain spreading to left arm, jaw, or back
+- Cold sweat, nausea
+- Shortness of breath
+- Call emergency services immediately (+91 800-555-CARE)
+
+---
+
+## Stroke (Cerebrovascular Accident)
+
+### Overview
+A stroke occurs when blood supply to part of the brain is interrupted (ischemic stroke) or when a blood vessel in the brain bursts (hemorrhagic stroke). It is a medical emergency — "time lost is brain lost."
+
+### Types
+- **Ischemic Stroke (87%):** Caused by a blood clot blocking a brain artery
+- **Hemorrhagic Stroke:** Caused by a ruptured blood vessel in the brain
+- **TIA (Transient Ischemic Attack):** "Mini-stroke" — temporary blockage, warning sign
+
+### FAST Recognition
+- **F**ace Drooping: One side of face droops when smiling
+- **A**rm Weakness: One arm drifts downward when raised
+- **S**peech Difficulty: Slurred or strange speech
+- **T**ime to Call: Call emergency services IMMEDIATELY
+
+### Risk Factors
+- High blood pressure (leading cause)
+- Heart disease and atrial fibrillation
+- Diabetes
+- High cholesterol
+- Smoking
+- Obesity
+- Family history
+- Previous stroke or TIA
+
+### Treatment (Time-Critical)
+- Ischemic: IV thrombolysis (tPA) within 4.5 hours of onset
+- Mechanical thrombectomy within 24 hours for large vessel occlusion
+- Hemorrhagic: Surgical intervention, blood pressure control
+- Rehabilitation: Physical, occupational, speech therapy
+
+---
+
+## Kidney Disease (Chronic Kidney Disease — CKD)
+
+### Overview
+CKD is a gradual loss of kidney function over time. The kidneys filter waste and excess fluids from the blood. When kidneys fail, dangerous levels of fluid, electrolytes, and waste accumulate.
+
+### Stages (based on GFR — Glomerular Filtration Rate)
+- Stage 1: GFR 90+ (kidney damage with normal function)
+- Stage 2: GFR 60-89 (mild decrease)
+- Stage 3a: GFR 45-59, Stage 3b: GFR 30-44 (moderate decrease)
+- Stage 4: GFR 15-29 (severe decrease)
+- Stage 5: GFR below 15 (kidney failure — dialysis or transplant needed)
+
+### Causes
+- Diabetes (leading cause)
+- Hypertension (second leading cause)
+- Glomerulonephritis
+- Polycystic kidney disease
+- Prolonged use of NSAIDs
+- Urinary tract obstructions
+- Recurrent kidney infections
+
+### Symptoms
+- Fatigue and weakness
+- Swelling in feet, ankles, hands, or face (edema)
+- Decreased urine output or foamy urine
+- Blood in urine (hematuria)
+- Nausea and loss of appetite
+- Muscle cramps
+- Itchy skin
+- Shortness of breath
+- High blood pressure
+
+### Diagnosis
+- Serum creatinine and BUN (Blood Urea Nitrogen)
+- Estimated GFR (eGFR)
+- Urine albumin-to-creatinine ratio (UACR)
+- KFT (Kidney Function Test) panel
+- Kidney ultrasound
+- Kidney biopsy (if needed)
+
+### Treatment
+- Control underlying conditions (diabetes, hypertension)
+- ACE inhibitors or ARBs for kidney protection
+- Dietary modifications
+- Dialysis (hemodialysis or peritoneal dialysis) for advanced CKD
+- Kidney transplantation for end-stage renal disease
+
+### Diet for Kidney Disease
+- Low sodium (less than 2,000 mg/day)
+- Low potassium: avoid bananas, oranges, potatoes, tomatoes
+- Low phosphorus: limit dairy, nuts, dark sodas
+- Moderate protein intake (as advised by nephrologist)
+- Adequate fluid management based on urine output
+
+---
+
+## Liver Disease
+
+### Overview
+The liver performs over 500 vital functions including detoxification, protein synthesis, bile production, and metabolism. Liver disease can be caused by infections, alcohol abuse, obesity, and autoimmune conditions.
+
+### Common Types
+- **Hepatitis (A, B, C, D, E):** Viral infections affecting the liver
+- **Fatty Liver Disease (NAFLD/NASH):** Fat accumulation in liver cells
+- **Alcoholic Liver Disease:** Liver damage from excessive alcohol consumption
+- **Cirrhosis:** Advanced scarring of the liver
+- **Liver Cancer (Hepatocellular Carcinoma)**
+
+### Symptoms
+- Jaundice (yellowing of skin and eyes)
+- Abdominal pain and swelling (ascites)
+- Swelling in legs and ankles
+- Dark urine and pale stools
+- Chronic fatigue
+- Nausea and loss of appetite
+- Easy bruising and bleeding
+- Itchy skin
+- Confusion (hepatic encephalopathy — advanced stage)
+
+### Diagnosis
+- Liver Function Test (LFT): ALT, AST, ALP, bilirubin, albumin
+- Hepatitis panel (A, B, C antibodies and antigens)
+- Abdominal ultrasound
+- FibroScan (liver elastography)
+- CT scan or MRI
+- Liver biopsy
+
+### Treatment
+- Treat underlying cause (antiviral for hepatitis, abstinence for alcohol)
+- Lifestyle changes: healthy diet, exercise, weight loss for fatty liver
+- Medications: Ursodeoxycholic acid, diuretics for ascites
+- Liver transplant for end-stage liver disease
+
+### Diet for Liver Disease
+- Low fat, high fiber diet
+- Avoid alcohol completely
+- Reduce sodium for fluid retention
+- Lean proteins: chicken, fish, tofu
+- Fruits and vegetables
+- Avoid processed and fried foods
+
+---
+
+## Asthma
+
+### Overview
+Asthma is a chronic respiratory disease that causes inflammation and narrowing of the airways, making breathing difficult. It affects people of all ages but often starts in childhood. Symptoms can be triggered by allergens, exercise, cold air, stress, or respiratory infections.
+
+### Symptoms
+- Wheezing (whistling sound when breathing)
+- Shortness of breath
+- Chest tightness
+- Chronic cough, especially at night or early morning
+- Difficulty sleeping due to breathing problems
+- Symptoms worsen during exercise, cold weather, or allergen exposure
+
+### Triggers
+- Dust mites, pollen, mold, pet dander
+- Cigarette smoke and air pollution
+- Respiratory infections (cold, flu)
+- Exercise (exercise-induced bronchoconstriction)
+- Cold air and weather changes
+- Strong odors and chemical fumes
+- Stress and strong emotions
+
+### Diagnosis
+- Spirometry (measures airflow obstruction and reversibility)
+- Peak flow meter monitoring
+- Methacholine challenge test
+- Allergy testing (skin prick or blood IgE tests)
+- Chest X-ray to rule out other conditions
+
+### Treatment
+- **Quick-Relief (Rescue):** Short-acting beta-agonists (SABA) — Salbutamol/Albuterol inhaler
+- **Long-Term Control:** Inhaled corticosteroids (ICS) — Budesonide, Fluticasone
+- **Combination Inhalers:** ICS + LABA (Formoterol + Budesonide)
+- **Leukotriene modifiers:** Montelukast
+- **Severe Asthma:** Biologic therapies (Omalizumab)
+- Asthma Action Plan with green/yellow/red zones
+
+### Emergency Signs (Asthma Attack)
+- Severe shortness of breath with inability to speak full sentences
+- Rapid breathing and use of accessory muscles
+- No improvement after using rescue inhaler
+- Bluish lips or fingernails (cyanosis)
+- Seek emergency care immediately
+
+---
+
+## Migraine
+
+### Overview
+Migraine is a neurological condition characterized by intense, recurring headaches often accompanied by nausea, vomiting, and sensitivity to light and sound. Migraines can last from 4 to 72 hours and can be debilitating.
+
+### Types
+- **Migraine without aura:** Most common type
+- **Migraine with aura:** Visual disturbances (flashing lights, zigzag lines, blind spots) before the headache
+- **Chronic migraine:** 15 or more headache days per month for at least 3 months
+
+### Symptoms
+- Throbbing or pulsating pain, usually on one side of the head
+- Nausea and vomiting
+- Sensitivity to light (photophobia) and sound (phonophobia)
+- Visual disturbances (aura)
+- Dizziness and lightheadedness
+- Difficulty concentrating
+- Neck stiffness
+
+### Triggers
+- Stress and anxiety
+- Hormonal changes (menstruation)
+- Certain foods: cheese, chocolate, alcohol (red wine), MSG, artificial sweeteners
+- Caffeine (excess or withdrawal)
+- Sleep disturbances
+- Weather changes
+- Strong smells or bright lights
+- Skipping meals
+
+### Treatment
+- **Acute Treatment:** Triptans (Sumatriptan), NSAIDs (Ibuprofen), anti-nausea medication
+- **Preventive Treatment:** Beta-blockers (Propranolol), antidepressants (Amitriptyline), anticonvulsants (Topiramate), CGRP inhibitors
+- **Lifestyle Management:** Regular sleep schedule, stress management, trigger avoidance, adequate hydration
+
+### When to Seek Emergency Care
+- Sudden, severe headache ("thunderclap headache")
+- Headache with fever, stiff neck, confusion, seizures, or weakness
+- Headache after head injury
+- New headache pattern in someone over 50
+
+---
+
+## Anemia
+
+### Overview
+Anemia is a condition in which the blood lacks enough healthy red blood cells or hemoglobin to carry adequate oxygen to the body's tissues. It can make you feel tired and weak.
+
+### Types
+- **Iron-Deficiency Anemia:** Most common; due to insufficient iron intake or blood loss
+- **Vitamin B12 Deficiency Anemia:** Due to poor absorption or dietary deficiency
+- **Folate Deficiency Anemia:** Common in pregnancy
+- **Sickle Cell Anemia:** Genetic disorder causing abnormal hemoglobin
+- **Aplastic Anemia:** Bone marrow fails to produce enough blood cells
+- **Thalassemia:** Inherited blood disorder
+
+### Symptoms
+- Fatigue and weakness
+- Pale or yellowish skin
+- Shortness of breath
+- Dizziness or lightheadedness
+- Cold hands and feet
+- Rapid or irregular heartbeat
+- Headache
+- Brittle nails and hair loss
+
+### Diagnosis
+- Complete Blood Count (CBC): hemoglobin, hematocrit, MCV, MCH
+- Iron studies: serum iron, ferritin, TIBC, transferrin saturation
+- Vitamin B12 and folate levels
+- Peripheral blood smear
+- Reticulocyte count
+
+### Treatment
+- Iron supplements (ferrous sulfate, ferrous fumarate)
+- Vitamin B12 injections or supplements
+- Folic acid supplements
+- Dietary changes: red meat, spinach, beans, fortified cereals
+- Treat underlying cause (bleeding, malabsorption)
+- Blood transfusion for severe cases
+
+## Medical Disclaimer
+This information is for educational purposes only. It does not substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider for personalized medical guidance.
