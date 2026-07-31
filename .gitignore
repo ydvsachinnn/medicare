@@ -34,3 +34,7 @@ build/
 
 .env
 *.log
+
+### Sensitive / local test files ###
+/*.txt
+/*.html
