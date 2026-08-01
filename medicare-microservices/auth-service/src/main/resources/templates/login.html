@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — MediCare Plus</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+</head>
+<body class="auth-page">
+<div class="auth-shell">
+    <section class="auth-panel">
+        <a th:href="@{/}" style="display: flex; align-items: center; gap: 10px; margin-bottom: 24px; text-decoration: none; color: white;">
+            <div style="width: 36px; height: 36px; background: rgba(255,255,255,0.2); border-radius: 10px; display: flex; align-items: center; justify-content: center; color: white;">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                </svg>
+            </div>
+            <span style="font-weight: 800; font-size: 1.2rem;">MediCare Plus</span>
+        </a>
+        <p class="eyebrow" style="color: rgba(255,255,255,0.8);">Secure Portal Access</p>
+        <h1>Care, coordination, and confidence.</h1>
+        <p>Log in to access your customized dashboard for patient care, pharmacy records, and medical reports.</p>
+        <div style="display: flex; gap: 8px; margin-top: 24px; flex-wrap: wrap;">
+            <span style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 999px; padding: 6px 14px; font-size: 0.82rem; font-weight: 700;">Chairman Portal</span>
+            <span style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 999px; padding: 6px 14px; font-size: 0.82rem; font-weight: 700;">Doctor Workspace</span>
+            <span style="background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); border-radius: 999px; padding: 6px 14px; font-size: 0.82rem; font-weight: 700;">Patient Records</span>
+        </div>
+    </section>
+
+    <section class="auth-card">
+        <p class="eyebrow">Sign In</p>
+        <h2 style="font-size: 1.6rem; font-weight: 800; margin: 0 0 16px;">Welcome Back</h2>
+        
+        <div class="notice" th:if="${param.registered}" style="background: #f0fdf4; border-color: #bbf7d0; color: #166534;">
+            Registration successful. Please sign in to your account.
+        </div>
+        <div class="notice" th:if="${param.resetSuccess}" style="background: #f0fdf4; border-color: #bbf7d0; color: #166534;">
+            Password updated successfully! Please sign in with your new password.
+        </div>
+        <div class="notice" th:if="${param.logout}">
+            You have been signed out safely.
+        </div>
+        <div class="errors" th:if="${param.error}">
+            Invalid username or password. Please try again.
+        </div>
+
+        <form class="form-grid" th:action="@{/login}" method="post">
+            <div class="field">
+                <label for="username">Email Address / Username</label>
+                <input id="username" type="text" name="username" placeholder="Email address or username" autocomplete="username" required>
+            </div>
+            
+            <div class="field">
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" placeholder="••••••••" autocomplete="current-password" required>
+                <div style="text-align: right; margin-top: 4px;">
+                    <a th:href="@{/forgot-password}" style="color: var(--primary); font-size: 0.88rem; font-weight: 700; text-decoration: underline;">Forgot Password?</a>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-pill-primary" style="width: 100%; height: 46px; font-size: 1rem; border-radius: 12px; margin-top: 8px;">Sign In to Account</button>
+        </form>
+
+        <p style="margin-top: 18px; font-size: 0.92rem; color: #64748b; text-align: center;">
+            Forgot your password? <a th:href="@{/forgot-password}" style="color: var(--primary); font-weight: 700; text-decoration: underline;">Reset Password Here</a>
+        </p>
+
+        <p style="margin-top: 14px; font-size: 0.92rem; color: #64748b; text-align: center;">
+            Don't have a patient account? <a th:href="@{/register}" style="color: var(--primary); font-weight: 700;">Create Patient Account</a>
+        </p>
+        
+        <p style="margin-top: 8px; text-align: center;">
+            <a th:href="@{/}" style="font-size: 0.85rem; color: #64748b; text-decoration: underline;">← Back to Home Page</a>
+        </p>
+    </section>
+</div>
+</body>
+</html>

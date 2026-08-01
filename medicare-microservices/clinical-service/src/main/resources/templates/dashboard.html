@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard — MediCare Plus</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+    <script th:src="@{/js/app.js}" defer></script>
+</head>
+
+<body>
+    <div class="app-layout">
+        <!-- Hover Left Sidebar Explorer -->
+        <aside class="app-sidebar">
+            <nav class="sidebar-nav">
+                <a th:href="@{/dashboard}" class="sidebar-link active">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="14" y="14" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    <span>Dashboard</span>
+                </a>
+                <a th:if="${role == 'PATIENT'}" th:href="@{/my-appointments}" class="sidebar-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <span>My Appointments</span>
+                </a>
+                <a th:if="${role == 'DOCTOR' || role == 'CHAIRMAN'}" th:href="@{/appointments}" class="sidebar-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                    <span>Appointments</span>
+                </a>
+                <a th:if="${role == 'DOCTOR' || role == 'CHAIRMAN'}" th:href="@{/patients}" class="sidebar-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Patients</span>
+                </a>
+                <a th:if="${role == 'DOCTOR' || role == 'CHAIRMAN'}" th:href="@{/medicines}" class="sidebar-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M10.5 20.5l10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7z"></path>
+                    </svg>
+                    <span>Medicines</span>
+                </a>
+                <a th:if="${role == 'CHAIRMAN'}" th:href="@{/reports}" class="sidebar-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    </svg>
+                    <span>Reports</span>
+                </a>
+                <a th:if="${role == 'DOCTOR' || role == 'CHAIRMAN'}" th:href="@{/prescriptions}" class="sidebar-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                    </svg>
+                    <span>Prescriptions</span>
+                </a>
+                <a th:if="${role == 'CHAIRMAN'}" th:href="@{/doctors}" class="sidebar-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="8.5" cy="7" r="4"></circle>
+                    </svg>
+                    <span>Doctors</span>
+                </a>
+                <a th:if="${role == 'PATIENT'}" th:href="@{/patient-reports}" class="sidebar-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    </svg>
+                    <span>My Reports</span>
+                </a>
+                <a th:if="${role == 'PATIENT'}" th:href="@{/my-prescriptions}" class="sidebar-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
+                    </svg>
+                    <span>My Prescriptions</span>
+                </a>
+                <a th:href="@{/settings}" class="sidebar-link">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="3"></circle>
+                        <path
+                            d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                        </path>
+                    </svg>
+                    <span>Settings</span>
+                </a>
+            </nav>
+        </aside>
+
+        <div class="main-content">
+            <!-- TOP HEADER BAR WITH BRAND NAME AND TOP RIGHT LOGOUT & THEME TOGGLE -->
+            <header class="top-header-bar">
+                <a th:href="@{/dashboard}" class="top-header-brand">
+                    <div class="brand-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.5">
+                            <path
+                                d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                        </svg>
+                    </div>
+                    <span>MediCare Plus</span>
+                </a>
+                <div class="top-header-actions">
+                    <button onclick="toggleTheme()" class="theme-symbol-btn" title="Toggle Light/Dark Theme">
+                        <span id="theme-status-icon">☀️</span>
+                    </button>
+                    <form th:action="@{/logout}" method="post" style="margin:0;">
+                        <button type="submit" class="button secondary"
+                            style="border-radius: 999px; height: 38px; padding: 0 18px;">Logout</button>
+                    </form>
+                </div>
+            </header>
+
+            <section class="page-hero">
+                <div class="page-title">
+                    <span class="portal-badge" th:text="${roleLabel} + ' Portal'">Member Portal</span>
+                    <h1 th:text="'Welcome back, ' + ${fullName}" style="text-transform: capitalize;">Welcome</h1>
+                    <p>Access patient records, pharmacy inventories, medical reports, and staff workflows in real time.
+                    </p>
+                </div>
+            </section>
+
+            <main class="main">
+                <!-- Emergency Consultation Popup Alert for Doctors & Chairman -->
+                <section th:if="${emergencyAlerts != null && !emergencyAlerts.isEmpty()}"
+                    style="border: 2px solid #ef4444; background: rgba(239, 68, 68, 0.08); border-radius: 16px; padding: 24px; margin-bottom: 24px; box-shadow: 0 8px 24px rgba(239, 68, 68, 0.2);">
+                    <div
+                        style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <div
+                                style="width: 44px; height: 44px; border-radius: 12px; background: #dc2626; color: white; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; box-shadow: 0 4px 12px rgba(220, 38, 38, 0.4);">
+                                🚨</div>
+                            <div>
+                                <h2 style="font-size: 1.3rem; font-weight: 800; color: #dc2626; margin: 0;">URGENT
+                                    EMERGENCY BOOKING ALERT</h2>
+                                <span style="font-size: 0.9rem; color: var(--muted); font-weight: 600;">Immediate doctor
+                                    consultation requested by patient</span>
+                            </div>
+                        </div>
+                        <a th:href="@{/appointments}" class="btn-pill-emergency" style="padding: 8px 20px;">Review
+                            Emergency Appointments</a>
+                    </div>
+
+                    <div style="display: grid; gap: 12px;">
+                        <div th:each="em : ${emergencyAlerts}"
+                            style="border: 1px solid rgba(239, 68, 68, 0.4); border-radius: 12px; padding: 16px; background: var(--surface); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+                            <div>
+                                <strong style="font-size: 1.1rem; color: #dc2626;"
+                                    th:text="${em.patientName ?: em.patientUsername}">Patient Name</strong>
+                                <span
+                                    style="background: #fef2f2; color: #dc2626; font-size: 0.8rem; font-weight: 800; padding: 2px 8px; border-radius: 6px; border: 1px solid #fca5a5; margin-left: 8px;">EMERGENCY</span>
+                                <p style="margin: 6px 0 0; font-size: 0.9rem; color: var(--ink);">
+                                    📅 Date: <strong th:text="${em.appointmentDate}">Date</strong> | ⏰ Time: <strong
+                                        th:text="${em.appointmentTime}">Time</strong> | 📞 Contact: <strong
+                                        th:text="${em.patientPhone ?: 'N/A'}">Contact</strong>
+                                </p>
+                                <p style="margin: 4px 0 0; font-size: 0.85rem; color: var(--muted);"
+                                    th:if="${em.reason != null && !em.reason.isBlank()}"
+                                    th:text="'Reason: ' + ${em.reason}">Reason</p>
+                            </div>
+                            <a th:href="@{/appointments}" class="button danger"
+                                style="padding: 8px 16px; font-size: 0.88rem;">Accept Consultation</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Appointment Booking Notifications for Patients (Booking Accepted & Today's Reappointment) -->
+                <section th:if="${patientAppts != null && !patientAppts.isEmpty()}" style="margin-bottom: 24px;">
+                    <div th:each="app : ${patientAppts}" th:if="${app.status == 'CONFIRMED'}"
+                        style="border: 1px solid #10b981; background: rgba(16, 185, 129, 0.08); border-radius: 12px; padding: 16px 20px; margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <span style="font-size: 1.4rem;">🎉</span>
+                            <div>
+                                <strong style="color: #059669; font-size: 1.05rem;">Appointment Booking
+                                    Accepted!</strong>
+                                <p style="margin: 2px 0 0; font-size: 0.88rem; color: var(--ink);">
+                                    Your appointment with <strong
+                                        th:text="'Dr. ' + (${app.doctorName} ?: 'Specialist')">Doctor</strong> has been
+                                    accepted for <strong th:text="${app.appointmentDate}">Date</strong> at <strong
+                                        th:text="${app.appointmentTime}">Time</strong>.
+                                </p>
+                            </div>
+                        </div>
+                        <span
+                            style="background: #10b981; color: white; padding: 4px 12px; border-radius: 999px; font-size: 0.8rem; font-weight: 700;">CONFIRMED</span>
+                    </div>
+                </section>
+                <!-- Medication Timing Notifications Alert for Patients -->
+                <section th:if="${notifications != null && !notifications.isEmpty()}"
+                    style="border: 2px solid #3b82f6; background: linear-gradient(135deg, #eff6ff 0%, #ffffff 100%); border-radius: 16px; padding: 24px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);">
+                    <div
+                        style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px;">
+                        <div style="display: flex; align-items: center; gap: 10px;">
+                            <div
+                                style="width: 38px; height: 38px; border-radius: 10px; background: #2563eb; color: white; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">
+                                💊</div>
+                            <div>
+                                <h2 style="font-size: 1.2rem; font-weight: 800; color: #1e40af; margin: 0;">Medication
+                                    Timing Notifications</h2>
+                                <span style="font-size: 0.85rem; color: #3b82f6; font-weight: 600;">Due medicine
+                                    reminders prescribed by your physician</span>
+                            </div>
+                        </div>
+                        <span
+                            style="background: #2563eb; color: white; padding: 4px 12px; border-radius: 999px; font-weight: 700; font-size: 0.82rem;"
+                            th:text="${notifications.size() + ' Due Reminders'}">0 Due</span>
+                    </div>
+
+                    <div style="display: grid; gap: 12px;">
+                        <div th:each="n : ${notifications}" th:id="'dash-notif-' + ${n.id}"
+                            style="border: 1px solid #bfdbfe; border-radius: 12px; padding: 16px; background: white; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+                            <div>
+                                <div style="display: flex; align-items: center; gap: 8px;">
+                                    <strong style="font-size: 1.1rem; color: #1e3a8a;"
+                                        th:text="${n.medicineName}">Medicine</strong>
+                                    <span
+                                        style="background: #dbeafe; color: #1e40af; font-size: 0.8rem; font-weight: 700; padding: 2px 8px; border-radius: 6px;"
+                                        th:text="${n.dosage}">Dosage</span>
+                                </div>
+                                <p style="margin: 6px 0 0; font-size: 0.88rem; color: #475569;">
+                                    ⏰ Time: <strong th:text="${n.timeSlot + ' (' + n.scheduledTime + ')'}">Time</strong>
+                                    |
+                                    🍽️ <span th:text="${n.foodTiming}">Food</span> |
+                                    👨‍⚕️ Prescribed by <span th:text="${n.prescribedBy}">Doctor</span>
+                                </p>
+                            </div>
+                            <button type="button" th:onclick="'markAsTakenDash(\'' + ${n.id} + '\')'" class="button"
+                                style="background: #10b981; color: white; border: none; border-radius: 999px; padding: 8px 20px; font-size: 0.88rem; cursor: pointer; font-weight: 700; display: flex; align-items: center; gap: 6px;">
+                                <span>✓</span> Mark as Taken
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Discharge Date Alert Card for Patients -->
+                <section th:if="${latestDischargeReport != null}"
+                    style="border: 2px solid #059669; background: linear-gradient(135deg, #ecfdf5 0%, #ffffff 100%); border-radius: 16px; padding: 20px 24px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.08); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+                    <div style="display: flex; align-items: center; gap: 14px;">
+                        <div
+                            style="width: 44px; height: 44px; border-radius: 12px; background: #10b981; color: white; display: flex; align-items: center; justify-content: center; font-size: 1.4rem;">
+                            🏥</div>
+                        <div>
+                            <h2 style="font-size: 1.15rem; font-weight: 800; color: #065f46; margin: 0;"
+                                th:text="${'Discharge Date: ' + latestDischargeReport.dischargeDate}">Discharge Date
+                            </h2>
+                            <p style="margin: 4px 0 0; font-size: 0.88rem; color: #047857;"
+                                th:text="${'Status: ' + (latestDischargeReport.dischargeStatus ?: 'Scheduled')}">Status
+                            </p>
+                        </div>
+                    </div>
+                    <a th:href="@{/patient-reports}" class="button"
+                        style="background: #059669; color: white; border-radius: 999px; font-weight: 700; padding: 8px 20px; font-size: 0.88rem;">View
+                        Discharge Details</a>
+                </section>
+
+                <script th:if="${notifications != null && !notifications.isEmpty()}">
+                    function markAsTakenDash(id) {
+                        const card = document.getElementById('dash-notif-' + id);
+                        fetch('/api/notifications/' + id + '/take', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            }
+                        })
+                            .then(res => res.json())
+                            .then(data => {
+                                if (data.success) {
+                                    if (card) {
+                                        card.style.transition = 'all 0.4s ease';
+                                        card.style.opacity = '0';
+                                        card.style.transform = 'translateY(-10px)';
+                                        setTimeout(() => {
+                                            card.remove();
+                                        }, 400);
+                                    }
+                                }
+                            })
+                            .catch(err => console.error('Error:', err));
+                    }
+                </script>
+
+                <section class="stats-grid">
+                    <div class="stat">
+                        <span>Registered Patients</span>
+                        <strong th:text="${patientCount}">0</strong>
+                    </div>
+                    <div class="stat">
+                        <span>Medicines Tracked</span>
+                        <strong th:text="${medicineCount}">0</strong>
+                    </div>
+                    <div class="stat">
+                        <span>Medical Reports</span>
+                        <strong th:text="${reportCount}">0</strong>
+                    </div>
+                    <div class="stat">
+                        <span>Active Prescriptions</span>
+                        <strong th:text="${prescriptionCount}">0</strong>
+                    </div>
+                </section>
+
+                <section class="portal-grid">
+                    <article class="portal-card" th:if="${role == 'CHAIRMAN'}">
+                        <span class="eyebrow">Chairman Workspace</span>
+                        <h2>Administration Overview</h2>
+                        <p>Monitor overall hospital operations, doctors staff management, patient records, and medical
+                            reports.</p>
+                        <div class="card-actions">
+                            <a class="button" th:href="@{/patients}">Review Patients</a>
+                            <a class="button secondary" th:href="@{/reports}">Medical Reports</a>
+                            <a class="button secondary" th:href="@{/doctors}">Manage Doctors</a>
+                        </div>
+                    </article>
+
+                    <article class="portal-card" th:if="${role == 'DOCTOR'}">
+                        <span class="eyebrow">Doctor Workspace</span>
+                        <h2>Clinical Workspace</h2>
+                        <p>Manage patient details, assign medication schedules, and issue digital prescriptions.</p>
+                        <div class="card-actions">
+                            <a class="button" th:href="@{/patients}">Manage Patients</a>
+                            <a class="button secondary" th:href="@{/medicines}">Medicines</a>
+                            <a class="button secondary" th:href="@{/prescriptions}">Prescriptions</a>
+                        </div>
+                    </article>
+
+                    <article class="portal-card" th:if="${role == 'PATIENT'}">
+                        <span class="eyebrow">Patient Workspace</span>
+                        <h2>Personal Health Portal</h2>
+                        <p>View your personalized prescription schedules, dosage reminders, and download digital PDF
+                            prescriptions.</p>
+                        <div class="card-actions">
+                            <a class="button" th:href="@{/my-prescriptions}">My Prescriptions</a>
+                            <a class="button secondary" th:href="@{/patient-reports}">My Reports</a>
+                        </div>
+                    </article>
+
+                    <article class="portal-card">
+                        <span class="eyebrow">Doctor Consultations</span>
+                        <h2>Appointment Booking</h2>
+                        <p th:if="${role == 'PATIENT'}">Schedule virtual or in-clinic doctor consultations, select
+                            preferred date and time, and track booking status.</p>
+                        <p th:if="${role != 'PATIENT'}">Manage incoming patient consultation requests, approve schedule
+                            slots, and organize clinical appointments.</p>
+                        <div class="card-actions">
+                            <a th:if="${role == 'PATIENT'}" class="button" th:href="@{/appointments/book}">📅 Book
+                                Appointment</a>
+                            <a th:if="${role == 'PATIENT'}" class="button secondary" th:href="@{/my-appointments}">View
+                                My Appointments</a>
+                            <a th:if="${role != 'PATIENT'}" class="button" th:href="@{/appointments}">Manage
+                                Appointments</a>
+                        </div>
+                    </article>
+
+                    <article class="portal-card" th:if="${role == 'CHAIRMAN' || role == 'DOCTOR'}">
+                        <span class="eyebrow">Quick Action</span>
+                        <h2>Add Patient Record</h2>
+                        <p>Create a new patient entry with contact info and medical history background.</p>
+                        <div class="card-actions">
+                            <a class="button" th:href="@{/patients/new}">+ Add Patient</a>
+                        </div>
+                    </article>
+
+                    <article class="portal-card" th:if="${role == 'CHAIRMAN' || role == 'DOCTOR'}">
+                        <span class="eyebrow">Pharmacy</span>
+                        <h2>Medicine Inventory</h2>
+                        <p>Add new medicines and configure timing guidance (Morning, Afternoon, Evening, Night).</p>
+                        <div class="card-actions">
+                            <a class="button" th:href="@{/medicines/new}">+ Add Medicine</a>
+                        </div>
+                    </article>
+
+                    <article class="portal-card" th:if="${role == 'CHAIRMAN'}">
+                        <span class="eyebrow">Medical Reports</span>
+                        <h2>Upload Lab Reports</h2>
+                        <p>Create digital report entries for patients to access and download directly from their portal.
+                        </p>
+                        <div class="card-actions">
+                            <a class="button" th:href="@{/reports/new}">+ Add Report</a>
+                        </div>
+                    </article>
+                </section>
+            </main>
+
+            <footer class="app-dashboard-footer">
+                <div class="footer-content">
+                    <div class="footer-brand-section">
+                        <div class="brand-badge">
+                            <div class="brand-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5">
+                                    <path
+                                        d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                                </svg>
+                            </div>
+                            <span>MediCare Plus</span>
+                        </div>
+                        <p>Advanced Multi-Specialty Hospital Management & Digital Clinical Healthcare System.</p>
+                    </div>
+
+                    <div class="footer-links-grid">
+                        <div class="footer-col">
+                            <h4>Navigation</h4>
+                            <ul>
+                                <li><a th:href="@{/dashboard}">Dashboard</a></li>
+                                <li><a th:if="${role == 'PATIENT'}" th:href="@{/my-appointments}">My Appointments</a>
+                                </li>
+                                <li><a th:if="${role != 'PATIENT'}" th:href="@{/appointments}">Appointments</a></li>
+                                <li><a th:if="${role != 'PATIENT'}" th:href="@{/patients}">Patients</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Healthcare Modules</h4>
+                            <ul>
+                                <li><a th:if="${role == 'PATIENT'}" th:href="@{/my-prescriptions}">My Prescriptions</a>
+                                </li>
+                                <li><a th:if="${role != 'PATIENT'}" th:href="@{/prescriptions}">Prescriptions</a></li>
+                                <li><a th:if="${role == 'PATIENT'}" th:href="@{/patient-reports}">My Reports</a></li>
+                                <li><a th:if="${role == 'CHAIRMAN'}" th:href="@{/reports}">Medical Reports</a></li>
+                                <li><a th:if="${role == 'CHAIRMAN'}" th:href="@{/doctors}">Doctors Staff</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Support & Emergency</h4>
+                            <p style="margin: 0 0 4px; font-size: 0.85rem; color: #94a3b8;">24/7 Trauma Emergency:</p>
+                            <strong style="color: #ef4444; font-size: 1.05rem; display: block; margin-bottom: 6px;">+91
+                                (800) 555-CARE</strong>
+                            <span style="font-size: 0.82rem; color: #94a3b8;">support@medicareplus.com</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom-bar">
+                    <p>© 2026 MediCare Plus Hospital Network. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Floating AI Chatbot Assistant for Patient Role -->
+    <th:block th:if="${role == 'PATIENT'}">
+        <!-- Chatbot Trigger Floating Button -->
+        <button class="chatbot-trigger-btn" aria-label="Open Neura AI Assistant" title="Neura – AI That Cares">
+            <span class="neura-trigger-icon">✨</span>
+            <span class="notification-bubble"></span>
+        </button>
+
+        <!-- Chatbot Panel Window -->
+        <div class="chatbot-panel">
+            <!-- Header -->
+            <div class="chatbot-header">
+                <div class="chatbot-profile">
+                    <div class="chatbot-avatar">🧠</div>
+                    <div class="chatbot-info">
+                        <h3>Neura</h3>
+                        <div class="chatbot-status">
+                            <span class="status-dot"></span> AI That Cares
+                            <span class="quota-badge" style="margin-left: 8px; font-weight: 600; color: #60a5fa; background: rgba(96,165,250,0.15); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem;">⚡ <span id="quota-remaining-badge">50</span>/50 Left</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatbot-header-controls">
+                    <button id="chatbot-clear" class="chatbot-control-btn" title="Clear chat history" aria-label="Clear chat">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                    </button>
+                    <button id="chatbot-max" class="chatbot-control-btn" title="Toggle window size" aria-label="Maximize window">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg>
+                    </button>
+                    <button id="chatbot-close" class="chatbot-control-btn" title="Close chat panel" aria-label="Close panel">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Messages Body -->
+            <div class="chatbot-body" id="chatbot-messages">
+                <!-- Dynamic chat messages go here -->
+            </div>
+
+            <!-- Footer (Input Field & Disclaimer) -->
+            <div class="chatbot-footer">
+                <div class="chatbot-input-container">
+                    <input type="text" id="chatbot-input-field" placeholder="Ask Neura about symptoms, medicines, first aid..." autocomplete="off">
+                    <button id="chatbot-send-btn" class="chatbot-send-btn" aria-label="Send message" title="Send query">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="white" stroke="none"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                    </button>
+                </div>
+                <div class="chatbot-disclaimer">
+                    Neura provides educational health guidance. Always consult a licensed doctor for diagnosis.
+                </div>
+            </div>
+        </div>
+    </th:block>
+</body>
+
+</html>

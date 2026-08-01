@@ -1,0 +1,242 @@
+# Laboratory Tests & Medical Investigations Guide (NIH/WHO)
+
+## Complete Blood Count (CBC)
+
+### What It Is
+A CBC is one of the most commonly ordered blood tests. It measures the number and types of cells in your blood, including red blood cells, white blood cells, and platelets.
+
+### Components
+- **Red Blood Cell (RBC) Count:** Normal: Men 4.5-5.5 million/mcL; Women 4.0-5.0 million/mcL
+- **Hemoglobin (Hb):** Normal: Men 13.5-17.5 g/dL; Women 12.0-16.0 g/dL. Low Hb indicates anemia.
+- **Hematocrit (Hct):** Percentage of blood volume occupied by RBCs. Normal: Men 38-50%; Women 36-44%.
+- **White Blood Cell (WBC) Count:** Normal: 4,500-11,000/mcL. High WBC may indicate infection or inflammation.
+- **Platelet Count:** Normal: 150,000-400,000/mcL. Low platelets (thrombocytopenia) can cause bleeding. High platelets may indicate inflammation.
+- **MCV (Mean Corpuscular Volume):** Size of RBCs. Normal: 80-100 fL. Low MCV suggests iron deficiency; High MCV suggests B12/folate deficiency.
+- **MCH & MCHC:** Hemoglobin content of RBCs.
+- **RDW (Red Cell Distribution Width):** Variation in RBC size.
+
+### When It Is Ordered
+- Routine health checkup
+- Suspected anemia, infection, or blood disorders
+- Monitoring during chemotherapy or chronic disease
+- Pre-surgical evaluation
+- Dengue monitoring (platelet count)
+
+---
+
+## HbA1c (Glycated Hemoglobin)
+
+### What It Is
+HbA1c measures average blood sugar levels over the past 2-3 months. It reflects how well diabetes is being managed.
+
+### Normal Ranges
+- **Normal:** Below 5.7%
+- **Prediabetes:** 5.7% to 6.4%
+- **Diabetes:** 6.5% or higher
+- **Target for diabetics:** Below 7% (individualized by doctor)
+
+### When It Is Ordered
+- Diagnosing diabetes or prediabetes
+- Monitoring diabetes management (every 3-6 months)
+- Evaluating treatment effectiveness
+
+---
+
+## Liver Function Test (LFT)
+
+### What It Is
+LFT is a group of blood tests that measure enzymes, proteins, and substances produced or processed by the liver.
+
+### Components
+- **ALT (Alanine Aminotransferase):** Normal: 7-56 U/L. Elevated in liver damage (hepatitis, fatty liver).
+- **AST (Aspartate Aminotransferase):** Normal: 10-40 U/L. Elevated in liver, heart, or muscle damage.
+- **ALP (Alkaline Phosphatase):** Normal: 44-147 U/L. Elevated in bile duct obstruction, bone disease.
+- **GGT (Gamma-Glutamyl Transferase):** Elevated in alcohol-related liver disease, bile duct problems.
+- **Total Bilirubin:** Normal: 0.1-1.2 mg/dL. Elevated in jaundice, liver disease, hemolysis.
+- **Direct & Indirect Bilirubin:** Helps differentiate types of jaundice.
+- **Albumin:** Normal: 3.5-5.0 g/dL. Low in chronic liver disease, malnutrition.
+- **Total Protein:** Normal: 6.0-8.3 g/dL.
+- **Prothrombin Time (PT)/INR:** Measures clotting ability. Prolonged in severe liver disease.
+
+### When It Is Ordered
+- Suspected liver disease (hepatitis, fatty liver, cirrhosis)
+- Monitoring medication effects on liver
+- Jaundice evaluation
+- Pre-operative assessment
+- Chronic alcohol use monitoring
+
+---
+
+## Kidney Function Test (KFT / Renal Function Test)
+
+### Components
+- **Serum Creatinine:** Normal: Men 0.7-1.3 mg/dL; Women 0.6-1.1 mg/dL. Elevated in kidney dysfunction.
+- **Blood Urea Nitrogen (BUN):** Normal: 7-20 mg/dL. Elevated in kidney disease, dehydration.
+- **BUN/Creatinine Ratio:** Helps distinguish kidney from non-kidney causes.
+- **Estimated GFR (eGFR):** Normal: above 90 mL/min. Below 60 indicates chronic kidney disease.
+- **Uric Acid:** Normal: Men 3.4-7.0 mg/dL; Women 2.4-6.0 mg/dL. Elevated in gout, kidney stones.
+- **Electrolytes:** Sodium (135-145 mEq/L), Potassium (3.5-5.0 mEq/L), Chloride, Bicarbonate.
+
+### When It Is Ordered
+- Suspected kidney disease
+- Diabetes and hypertension monitoring
+- Medication monitoring (nephrotoxic drugs)
+- Dehydration evaluation
+- Pre-operative assessment
+
+---
+
+## Lipid Profile
+
+### What It Is
+A lipid profile measures fats and fatty substances in the blood. Used to assess cardiovascular risk.
+
+### Components
+- **Total Cholesterol:** Desirable: below 200 mg/dL; Borderline: 200-239; High: 240+
+- **LDL ("Bad") Cholesterol:** Optimal: below 100 mg/dL; Near optimal: 100-129; High: 160+
+- **HDL ("Good") Cholesterol:** Desirable: above 60 mg/dL; Low (risk): below 40 mg/dL
+- **Triglycerides:** Normal: below 150 mg/dL; Borderline: 150-199; High: 200-499; Very high: 500+
+- **VLDL Cholesterol:** Normal: 2-30 mg/dL
+- **Total Cholesterol/HDL Ratio:** Below 5 is desirable
+
+### When It Is Ordered
+- Cardiovascular risk assessment
+- Routine health screening (adults over 20, every 4-6 years)
+- Monitoring cholesterol-lowering medication
+- Diabetes, hypertension, or obesity evaluation
+- Family history of heart disease
+
+---
+
+## Blood Sugar Tests
+
+### Fasting Blood Sugar (FBS)
+- **Normal:** Below 100 mg/dL
+- **Prediabetes:** 100-125 mg/dL
+- **Diabetes:** 126 mg/dL or higher
+- Requires 8-12 hours fasting before the test
+
+### Post-Prandial Blood Sugar (PPBS)
+- Taken 2 hours after a meal
+- **Normal:** Below 140 mg/dL
+- **Diabetes:** 200 mg/dL or higher
+
+### Random Blood Sugar (RBS)
+- Can be taken at any time
+- **Diabetes:** 200 mg/dL or higher with symptoms
+
+---
+
+## Thyroid Profile
+
+### Components
+- **TSH (Thyroid Stimulating Hormone):** Normal: 0.4-4.0 mIU/L. High TSH: hypothyroidism. Low TSH: hyperthyroidism.
+- **Free T4 (Thyroxine):** Normal: 0.8-1.8 ng/dL. Low in hypothyroidism.
+- **Free T3 (Triiodothyronine):** Normal: 2.3-4.2 pg/mL.
+- **Thyroid Antibodies:** Anti-TPO, Anti-Thyroglobulin for autoimmune thyroid disease.
+
+---
+
+## ECG (Electrocardiogram)
+
+### What It Is
+ECG records the electrical activity of the heart. It is a non-invasive, painless test that takes about 5-10 minutes.
+
+### What It Detects
+- Heart rhythm abnormalities (arrhythmias)
+- Heart attack (myocardial infarction) — current or previous
+- Heart muscle enlargement
+- Electrolyte imbalances
+- Heart block
+- Ischemia (reduced blood flow to heart)
+
+### When It Is Ordered
+- Chest pain evaluation
+- Shortness of breath
+- Palpitations or irregular heartbeat
+- Pre-operative assessment
+- Monitoring heart conditions
+- Routine health checkup for high-risk patients
+
+---
+
+## Imaging Tests
+
+### X-Ray
+- Uses radiation to create images of internal structures
+- Common uses: chest X-ray (lungs, heart), bone fractures, joint assessment
+- Quick, painless, widely available
+- Minimal radiation exposure
+
+### CT Scan (Computed Tomography)
+- Uses X-rays from multiple angles to create cross-sectional images
+- More detailed than standard X-ray
+- Common uses: brain imaging (stroke, tumors), chest/abdomen evaluation, trauma assessment
+- May use contrast dye for enhanced images
+- Higher radiation dose than X-ray
+
+### MRI (Magnetic Resonance Imaging)
+- Uses magnetic fields and radio waves (no radiation)
+- Provides detailed images of soft tissues, brain, spinal cord, joints, organs
+- Common uses: brain disorders, spinal disc problems, joint injuries, organ evaluation
+- Takes 30-90 minutes; requires lying still inside the scanner
+- Contraindicated with certain metallic implants (pacemakers, some surgical clips)
+- May use gadolinium contrast for enhanced images
+
+### Ultrasound
+- Uses sound waves to create real-time images
+- No radiation exposure
+- Common uses: pregnancy monitoring, abdominal organs (liver, kidneys, gallbladder), thyroid, heart (echocardiogram), pelvic evaluation
+- Painless and widely available
+
+---
+
+## Urine Tests
+
+### Routine Urinalysis
+- **Color and Appearance:** Normal: pale to dark yellow, clear
+- **pH:** Normal: 4.5-8.0
+- **Specific Gravity:** Normal: 1.005-1.030 (concentration)
+- **Protein:** Normally absent. Presence may indicate kidney disease.
+- **Glucose:** Normally absent. Presence may indicate diabetes.
+- **Blood:** Normally absent. Presence may indicate infection, stones, or kidney disease.
+- **WBCs/Pus Cells:** Elevated in urinary tract infections (UTI).
+- **Bacteria:** Presence indicates UTI.
+- **Ketones:** Presence may indicate diabetic ketoacidosis or fasting.
+- **Bilirubin:** Presence may indicate liver disease.
+
+### Urine Culture
+- Identifies specific bacteria causing UTI
+- Determines antibiotic sensitivity
+- Ordered when UTI is suspected or recurrent
+
+---
+
+## Vitamin D Test
+
+### What It Is
+Measures 25-hydroxyvitamin D level in the blood.
+
+### Normal Ranges
+- **Sufficient:** 30-100 ng/mL
+- **Insufficient:** 20-29 ng/mL
+- **Deficient:** Below 20 ng/mL
+- **Toxic:** Above 100 ng/mL
+
+### Deficiency Symptoms
+- Bone pain and weakness
+- Muscle weakness
+- Fatigue
+- Depression
+- Frequent infections
+- Slow wound healing
+
+### Sources
+- Sunlight exposure (15-20 minutes daily)
+- Fatty fish (salmon, mackerel, tuna)
+- Egg yolks
+- Fortified milk and cereals
+- Supplements (Vitamin D3 — cholecalciferol)
+
+## Medical Disclaimer
+This information is for educational purposes only. It does not substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider for personalized medical guidance.

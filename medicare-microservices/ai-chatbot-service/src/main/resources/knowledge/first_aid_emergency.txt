@@ -1,0 +1,238 @@
+# Comprehensive First Aid & Emergency Guide (CDC/NIH/Red Cross)
+
+## Burns
+
+### First-Degree Burns (Superficial)
+- Affects only outer layer of skin (epidermis)
+- Symptoms: Redness, pain, mild swelling
+- Treatment: Cool under running water for 10-15 minutes. Apply aloe vera or moisturizer. Cover with sterile non-stick bandage. Take paracetamol for pain.
+- DO NOT apply ice, butter, or toothpaste
+
+### Second-Degree Burns
+- Affects epidermis and part of dermis
+- Symptoms: Red, blistered, swollen, very painful
+- Treatment: Cool under running water for 15-20 minutes. DO NOT pop blisters. Cover with sterile non-stick bandage. Seek medical attention.
+- Watch for signs of infection: increased pain, redness, swelling, fever
+
+### Third-Degree Burns (Severe — EMERGENCY)
+- Affects all layers of skin and underlying tissue
+- Symptoms: White, charred, or leathery skin. May be painless due to nerve damage.
+- Treatment: Call emergency services immediately. Do NOT remove clothing stuck to burn. Cover with cool, moist sterile cloth. Elevate burned area above heart if possible. Monitor for shock.
+
+---
+
+## Snake Bites
+
+### Immediate Actions
+1. Move the person away from the snake
+2. Keep the person calm and still (movement spreads venom faster)
+3. Immobilize the bitten limb below heart level
+4. Remove jewelry, watches, tight clothing near bite site (swelling will occur)
+5. Clean the bite wound gently with soap and water
+6. Mark the edge of swelling with a pen and note the time
+7. Transport to hospital IMMEDIATELY for antivenom
+
+### DO NOT
+- Do NOT cut the wound
+- Do NOT try to suck out venom
+- Do NOT apply a tight tourniquet (pressure immobilization bandage is acceptable for some species)
+- Do NOT apply ice or cold pack
+- Do NOT give aspirin or ibuprofen (increases bleeding)
+- Do NOT give alcohol
+
+### Important
+- Try to note the snake's appearance (color, size, pattern) for identification
+- Antivenom is the only effective treatment — seek emergency room immediately
+
+---
+
+## Dog Bites & Rabies Prevention
+
+### Immediate Actions
+1. Wash the wound IMMEDIATELY with soap and running water for at least 15 minutes (reduces rabies viral load significantly)
+2. Apply antiseptic (povidone-iodine or alcohol)
+3. Apply sterile bandage
+4. Note the dog's vaccination status and behavior (provoked vs unprovoked)
+
+### Medical Care (within 24 hours)
+- Tetanus booster if not up to date
+- Post-Exposure Prophylaxis (PEP) rabies vaccine series if:
+  - Dog is stray or vaccination status unknown
+  - Dog is behaving abnormally
+  - Unprovoked attack
+- Antibiotics may be prescribed for deep wounds
+- Rabies immunoglobulin (RIG) may be administered around the wound
+
+### Warning Signs of Infection
+- Increasing pain, redness, warmth around the wound
+- Swelling and pus discharge
+- Fever
+- Red streaks extending from the wound
+
+---
+
+## Bleeding Control
+
+### Minor Bleeding
+1. Wash hands and wear gloves if available
+2. Apply direct pressure with clean cloth or sterile gauze
+3. Keep pressure for 10-15 minutes without lifting
+4. Elevate the injured area above heart level if possible
+5. Apply bandage once bleeding stops
+6. Clean wound with mild soap and water
+
+### Severe Bleeding (EMERGENCY)
+1. Call emergency services immediately
+2. Apply firm, direct pressure with clean cloth or gauze
+3. If blood soaks through, add more layers on top (do NOT remove first layer)
+4. Apply tourniquet 2-3 inches above wound if bleeding is life-threatening and cannot be controlled with direct pressure
+5. Keep the person lying down and calm
+6. Monitor for signs of shock: pale skin, rapid breathing, confusion, cold clammy skin
+
+---
+
+## Fractures (Broken Bones)
+
+### Signs of a Fracture
+- Severe pain at injury site
+- Swelling and bruising
+- Deformity or unnatural angle
+- Inability to move the affected limb
+- Grinding sensation
+- Bone protruding through skin (open fracture — EMERGENCY)
+
+### First Aid
+1. Do NOT attempt to realign the bone
+2. Immobilize the injured area in the position found
+3. Apply ice wrapped in cloth (20 minutes on, 20 minutes off) to reduce swelling
+4. Splint the fracture if trained (use padded rigid material)
+5. Elevate the injured area if possible
+6. Control any bleeding with sterile dressing
+7. Monitor circulation below the injury (pulse, sensation, movement)
+8. Transport to hospital
+
+### Open Fracture (Bone Exposed)
+- Cover wound with sterile moist dressing
+- Do NOT push bone back in
+- Call emergency services immediately
+- Control bleeding with gentle pressure around (not on) the wound
+
+---
+
+## Heat Stroke (EMERGENCY)
+
+### Signs
+- Body temperature above 104°F (40°C)
+- Hot, red, dry skin (sweating may have stopped)
+- Rapid, strong pulse
+- Confusion, altered mental state
+- Headache, dizziness, nausea
+- Loss of consciousness
+
+### Treatment
+1. Call emergency services immediately
+2. Move person to cool, shaded area
+3. Cool rapidly: apply cool water to skin, place ice packs on neck, armpits, and groin
+4. Fan the person while misting with cool water
+5. Do NOT give fluids if unconscious
+6. Monitor body temperature continuously
+7. Place in recovery position if unconscious
+
+### Prevention
+- Stay hydrated in hot weather
+- Avoid prolonged sun exposure during peak hours (10 AM - 4 PM)
+- Wear lightweight, light-colored clothing
+- Take frequent breaks in shade
+- Never leave anyone in a parked car
+
+---
+
+## Electric Shock
+
+### Immediate Actions
+1. Do NOT touch the person if they are still in contact with electrical source
+2. Turn off power source or use a dry, non-conductive object (wooden stick, rubber) to separate person from source
+3. Call emergency services immediately
+4. Check for breathing and pulse — start CPR if needed
+5. Look for entry and exit burn wounds
+6. Cover burns with sterile dressing
+7. Monitor for cardiac arrhythmias (heart may need monitoring for 24 hours)
+
+### Warning
+- Even minor electric shocks can cause internal injuries
+- Seek medical evaluation even if the person appears fine
+- Lightning strikes: treat as severe electric shock emergency
+
+---
+
+## Poisoning
+
+### Ingested Poison
+1. Call poison control center or emergency services immediately
+2. Try to identify the substance, amount, and time of ingestion
+3. Do NOT induce vomiting unless specifically instructed by poison control
+4. Do NOT give anything to eat or drink unless instructed
+5. If the person is conscious and not convulsing, you may give sips of water
+6. Save the container or remaining substance for identification
+
+### Inhaled Poison (Carbon Monoxide, Gas Leaks)
+1. Move person to fresh air immediately
+2. Call emergency services
+3. Begin CPR if not breathing
+4. Keep the person warm and calm
+
+---
+
+## Food Poisoning
+
+### Symptoms (appear within hours to days)
+- Nausea and vomiting
+- Diarrhea (possibly bloody)
+- Abdominal cramps
+- Fever
+- Dehydration
+
+### Treatment
+- Stay hydrated: ORS (Oral Rehydration Solution), clear fluids, coconut water
+- Rest the stomach: start with bland foods (BRAT diet — bananas, rice, applesauce, toast)
+- Avoid dairy, caffeine, alcohol, spicy foods
+- Seek medical care if: high fever, blood in stool, severe dehydration, symptoms lasting more than 3 days, pregnant, elderly, or immunocompromised
+
+---
+
+## Choking
+
+### For Adults and Children Over 1 Year (Heimlich Maneuver)
+1. Stand behind the person and wrap arms around their waist
+2. Make a fist with one hand and place it above the navel, below the breastbone
+3. Grasp your fist with your other hand
+4. Perform quick, upward abdominal thrusts
+5. Repeat until object is expelled or person becomes unconscious
+6. If unconscious: lower person to ground, call emergency services, begin CPR
+
+### For Infants Under 1 Year
+1. Place infant face down on your forearm, supporting head
+2. Give 5 firm back blows between shoulder blades with heel of hand
+3. Turn infant face up, give 5 chest thrusts using 2 fingers on center of chest
+4. Alternate back blows and chest thrusts until object is expelled
+5. If infant becomes unconscious: call emergency, begin infant CPR
+
+---
+
+## CPR (Cardiopulmonary Resuscitation)
+
+### For Adults
+1. Check responsiveness: tap shoulders and shout "Are you okay?"
+2. Call emergency services (or have someone call)
+3. Check for breathing (look, listen, feel for 10 seconds)
+4. If not breathing: begin chest compressions
+   - Place heel of one hand on center of chest (between nipples)
+   - Place other hand on top, interlace fingers
+   - Push hard and fast: at least 2 inches deep, 100-120 compressions per minute
+5. If trained: give 2 rescue breaths after every 30 compressions
+6. If untrained: perform hands-only CPR (continuous chest compressions)
+7. Continue until emergency services arrive or the person starts breathing
+8. Use an AED (Automated External Defibrillator) if available — follow voice prompts
+
+## Medical Disclaimer
+This information is for educational purposes only. In any emergency, always call local emergency services immediately. This guide does not replace professional first aid training.

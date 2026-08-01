@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Reports — MediCare Plus</title>
+    <link rel="stylesheet" th:href="@{/css/app.css}">
+    <script th:src="@{/js/app.js}" defer></script>
+</head>
+<body>
+<div class="app-layout">
+    <aside class="app-sidebar">
+        <nav class="sidebar-nav">
+            <a th:href="@{/dashboard}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+                <span>Dashboard</span>
+            </a>
+            <a th:href="@{/my-appointments}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span>My Appointments</span>
+            </a>
+            <a th:href="@{/patient-reports}" class="sidebar-link active">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path></svg>
+                <span>My Reports</span>
+            </a>
+            <a th:href="@{/my-prescriptions}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path></svg>
+                <span>My Prescriptions</span>
+            </a>
+            <a th:href="@{/settings}" class="sidebar-link">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                <span>Settings</span>
+            </a>
+        </nav>
+    </aside>
+
+    <div class="main-content">
+        <header class="top-header-bar">
+            <a th:href="@{/dashboard}" class="top-header-brand">
+                <div class="brand-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                    </svg>
+                </div>
+                <span>MediCare Plus</span>
+            </a>
+            <div class="top-header-actions">
+                <button onclick="toggleTheme()" class="theme-symbol-btn" title="Toggle Light/Dark Theme">
+                    <span id="theme-status-icon">☀️</span>
+                </button>
+                <form th:action="@{/logout}" method="post" style="margin:0;">
+                    <button type="submit" class="button secondary" style="border-radius: 999px; height: 38px; padding: 0 18px;">Logout</button>
+                </form>
+            </div>
+        </header>
+        <section class="page-hero">
+            <div class="page-title">
+                <span class="portal-badge">Patient Portal</span>
+                <h1>My Medical Reports</h1>
+                <p>Review diagnostic results, lab summaries, and download full report files.</p>
+            </div>
+        </section>
+
+        <main class="main">
+            <!-- Discharge Status Card for Patient -->
+            <section th:if="${latestDischargeReport != null}" style="border: 2px solid #059669; background: rgba(16, 185, 129, 0.08); border-radius: 16px; padding: 24px; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.08);">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; margin-bottom: 12px;">
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <div style="width: 40px; height: 40px; border-radius: 10px; background: #10b981; color: white; display: flex; align-items: center; justify-content: center; font-size: 1.3rem;">🏥</div>
+                        <div>
+                            <h2 style="font-size: 1.25rem; font-weight: 800; color: #059669; margin: 0;">Hospital Discharge Status</h2>
+                            <span style="font-size: 0.88rem; color: var(--muted);" th:text="${'Linked Report: ' + latestDischargeReport.title}">Report</span>
+                        </div>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <span style="background: #10b981; color: white; padding: 6px 14px; border-radius: 999px; font-weight: 700; font-size: 0.88rem;"
+                              th:text="${latestDischargeReport.dischargeStatus ?: 'Scheduled for Discharge'}">Status</span>
+                    </div>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 16px; padding-top: 16px; border-top: 1px dashed var(--line);">
+                    <div>
+                        <span style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; color: #059669; font-weight: 700; display: block;">Target / Confirmed Discharge Date</span>
+                        <strong style="font-size: 1.3rem; color: var(--ink); display: block; margin-top: 4px;" th:text="${'🗓️ ' + latestDischargeReport.dischargeDate}">2026-07-30</strong>
+                    </div>
+                    <div th:if="${latestDischargeReport.dischargeSummary != null && !latestDischargeReport.dischargeSummary.isBlank()}">
+                        <span style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.5px; color: #059669; font-weight: 700; display: block;">Discharge Summary & Advice</span>
+                        <p style="margin: 4px 0 0; color: var(--ink); font-size: 0.95rem; line-height: 1.5;" th:text="${latestDischargeReport.dischargeSummary}">Discharge summary notes</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="portal-card">
+                <h2 style="font-size: 1.3rem; font-weight: 800; margin: 0 0 16px;">Available Medical Reports</h2>
+                <div th:if="${!reports.isEmpty()}" style="display: grid; gap: 16px;">
+                    <div th:each="report : ${reports}" style="border: 1px solid var(--line); border-radius: 12px; padding: 24px; background: var(--surface); display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;">
+                        <div>
+                            <strong style="font-size: 1.15rem; color: var(--ink); display: block;" th:text="${report.title}">Report Title</strong>
+                            <p style="margin: 6px 0 0; color: var(--muted); font-size: 0.92rem;" th:text="${report.notes ?: 'No summary notes available.'}">Notes</p>
+                            <div th:if="${report.dischargeDate != null && !report.dischargeDate.isBlank()}" style="margin-top: 10px; display: flex; align-items: center; gap: 8px;">
+                                <span style="background: var(--bg-light); color: var(--ink); padding: 4px 10px; border-radius: 6px; font-size: 0.82rem; font-weight: 600;" th:text="${'🗓️ Discharge: ' + report.dischargeDate}">Discharge Date</span>
+                                <span th:if="${report.dischargeStatus != null}" style="background: #e0f2fe; color: #0369a1; padding: 4px 10px; border-radius: 6px; font-size: 0.82rem; font-weight: 600;" th:text="${report.dischargeStatus}">Status</span>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 8px;">
+                            <a class="btn-pill-primary" style="padding: 8px 16px; font-size: 0.88rem; background: #059669; border: none;" th:href="@{/reports/{id}/download(id=${report.id})}">
+                                📥 Download TXT
+                            </a>
+                            <a class="button secondary" style="padding: 8px 16px; font-size: 0.88rem; border-radius: 999px; display: inline-flex; align-items: center; gap: 4px;" th:href="@{/reports/{id}/print(id=${report.id})}" target="_blank">
+                                📄 Print / Download PDF
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="empty-state" th:if="${reports.isEmpty()}">No medical reports are linked to your account yet.</div>
+            </section>
+        </main>
+    </div>
+</div>
+</body>
+</html>

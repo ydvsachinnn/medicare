@@ -1,0 +1,211 @@
+# MediCare Plus Hospital — FAQs, Services, & Department Guide
+
+## Hospital Overview
+MediCare Plus is a multi-specialty hospital providing comprehensive healthcare services including outpatient consultations, inpatient care, emergency services, diagnostic imaging, laboratory services, pharmacy, and surgical facilities.
+
+---
+
+## Hospital Timings
+
+### Emergency Department
+- **Open 24/7, 365 days a year**
+- Trauma and critical care available round the clock
+- Emergency Hotline: +91 (800) 555-CARE (+91 800-555-2273)
+
+### General OPD (Outpatient Department)
+- **Monday to Saturday:** 9:00 AM to 6:00 PM
+- **Morning Session:** 9:00 AM to 1:00 PM
+- **Afternoon Session:** 2:00 PM to 6:00 PM
+- **Sundays and Public Holidays:** Closed (Emergency services available)
+
+### In-Patient Visiting Hours
+- **Daily:** 4:00 PM to 7:00 PM
+- ICU visiting may be restricted — check with nursing station
+
+### Pharmacy
+- **24/7** for emergency prescriptions
+- Regular pharmacy: 8:00 AM to 10:00 PM
+
+### Laboratory & Diagnostics
+- **Monday to Saturday:** 7:00 AM to 8:00 PM
+- **Sunday:** 8:00 AM to 2:00 PM (limited services)
+- Fasting blood tests: report before 10:00 AM
+
+---
+
+## Departments & Specialties
+
+### General Medicine
+- Comprehensive evaluation of adult medical conditions
+- Fever, infections, diabetes, hypertension management
+- Preventive health checkups
+
+### Cardiology
+- Heart disease diagnosis and management
+- ECG, echocardiography, stress testing
+- Coronary angiography and interventions
+- Heart failure management
+- Pacemaker implantation
+
+### Pediatrics
+- Child healthcare from birth to 18 years
+- Vaccination and immunization
+- Growth and development monitoring
+- Childhood infections and diseases
+- Neonatal care
+
+### Orthopedics
+- Bone and joint disorders
+- Fracture management
+- Joint replacement surgery (knee, hip)
+- Sports medicine
+- Spine disorders
+
+### Neurology
+- Brain and nervous system disorders
+- Stroke management
+- Epilepsy and seizure disorders
+- Headache and migraine clinics
+- Parkinson's disease and movement disorders
+
+### Dermatology
+- Skin, hair, and nail disorders
+- Acne and skin infection treatment
+- Allergic skin conditions
+- Cosmetic dermatology
+- Psoriasis and eczema management
+
+### Obstetrics & Gynecology
+- Prenatal and postnatal care
+- High-risk pregnancy management
+- Normal and cesarean deliveries
+- Gynecological surgeries
+- PCOS and fertility management
+- Cervical cancer screening
+
+### Ophthalmology (Eye Care)
+- Comprehensive eye examinations
+- Cataract surgery
+- Glaucoma management
+- Diabetic eye screening
+- Refractive error correction
+
+### ENT (Ear, Nose & Throat)
+- Hearing and balance disorders
+- Sinus and nasal problems
+- Tonsillitis and adenoid issues
+- Voice and swallowing disorders
+
+### Psychiatry & Mental Health
+- Depression and anxiety treatment
+- Counseling and psychotherapy
+- Substance abuse management
+- Stress management programs
+
+### Pulmonology (Respiratory Medicine)
+- Asthma management
+- COPD treatment
+- Tuberculosis care
+- Sleep apnea
+- Pulmonary function testing
+
+### Nephrology (Kidney Care)
+- Chronic kidney disease management
+- Dialysis services (hemodialysis and peritoneal)
+- Kidney transplant evaluation
+- Electrolyte disorders
+
+### Gastroenterology
+- Digestive system disorders
+- Endoscopy and colonoscopy
+- Liver disease management
+- Inflammatory bowel disease
+- GERD and ulcer treatment
+
+### Oncology (Cancer Care)
+- Cancer diagnosis and staging
+- Chemotherapy
+- Radiation therapy
+- Palliative care
+- Cancer screening programs
+
+---
+
+## How to Book an Appointment
+
+### Online Booking (Through Patient Portal)
+1. Log in to your MediCare Plus patient account
+2. Click "Book Appointment" in the dashboard sidebar
+3. Select the department and preferred doctor
+4. Choose your preferred date and available time slot
+5. Add reason for visit (optional)
+6. Submit the booking request
+7. You will receive a confirmation once the appointment is approved
+
+### Walk-In Registration
+- Visit the reception desk with a valid government ID
+- New patients will receive a unique patient ID
+- Walk-in consultations are subject to doctor availability
+
+### Emergency Consultation
+- For urgent medical needs, select "Emergency" when booking
+- Emergency appointments receive priority processing
+- Direct walk-in to Emergency Department for critical conditions
+
+---
+
+## Frequently Asked Questions (FAQs)
+
+### Q: How do I access my medical reports?
+Go to the "My Reports" section in your patient dashboard. All lab results and diagnostic reports uploaded by your doctor will be available there for viewing and download.
+
+### Q: How do I reset my password?
+Click "Forgot Password" on the login page. Enter your registered email address. You will receive an OTP (One-Time Password) to reset your password.
+
+### Q: How do I track my medication schedule?
+Check the "Medication Timing Notifications" section on your dashboard. It shows your prescribed medicines with dosage, timing (morning/afternoon/evening/night), and food relationship (before/after food).
+
+### Q: How do I view my prescriptions?
+Go to "My Prescriptions" in the sidebar. You can view all active and past prescriptions, including medicine names, dosages, duration, and doctor's instructions.
+
+### Q: Can I cancel or reschedule an appointment?
+Contact the reception desk or use the appointment management section in your dashboard. Cancellations should be made at least 24 hours in advance.
+
+### Q: What documents do I need for admission?
+- Valid government ID (Aadhar, PAN, Passport, Driving License)
+- Insurance card (if applicable)
+- Previous medical records and reports
+- Current medication list
+
+### Q: Does the hospital accept health insurance?
+Please contact the billing department for information about insurance partnerships and cashless facility availability.
+
+### Q: What are the payment options?
+- Cash
+- Credit/Debit cards
+- UPI payments
+- Online bank transfer
+- Insurance (cashless and reimbursement)
+
+### Q: How can I get a copy of my discharge summary?
+Discharge summaries are available in the "My Reports" section of your patient dashboard. You can also request a physical copy from the Medical Records department.
+
+### Q: Is there a pharmacy inside the hospital?
+Yes, MediCare Plus has an in-house pharmacy open 24/7 for emergency prescriptions and 8:00 AM to 10:00 PM for regular prescriptions.
+
+---
+
+## Contact Information
+
+- **Emergency Hotline:** +91 (800) 555-CARE (+91 800-555-2273)
+- **General Inquiries:** +91 (800) 555-INFO
+- **Email:** support@medicareplus.com
+- **Appointment Helpline:** +91 (800) 555-BOOK
+- **Website:** www.medicareplus.com
+
+---
+
+## Medical Disclaimer
+MediCare Plus AI Medical Assistant provides educational health information only. It is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. Never disregard professional medical advice or delay seeking it because of information provided by this assistant.
+
+In case of a medical emergency, contact emergency services immediately or visit the nearest emergency department.

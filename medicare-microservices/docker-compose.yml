@@ -1,0 +1,112 @@
+version: '3.8'
+
+services:
+  # ─────────────────────────────────────────────
+  # MongoDB (shared instance, separate logical databases)
+  # ─────────────────────────────────────────────
+  mongodb:
+    image: mongo:7.0
+    container_name: medicare-mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ─────────────────────────────────────────────
+  # Eureka Discovery Server (Port 8761)
+  # ─────────────────────────────────────────────
+  eureka-server:
+    build: ./eureka-server
+    container_name: eureka-server
+    ports:
+      - "8761:8761"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8761/actuator/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  # ─────────────────────────────────────────────
+  # Auth Service (Port 8081)
+  # ─────────────────────────────────────────────
+  auth-service:
+    build: ./auth-service
+    container_name: auth-service
+    ports:
+      - "8081:8081"
+    environment:
+      SPRING_DATA_MONGODB_URI: mongodb://mongodb:27017/auth_db
+      EUREKA_URI: http://eureka-server:8761/eureka/
+      SPRING_MAIL_HOST: ${SPRING_MAIL_HOST:-smtp.gmail.com}
+      SPRING_MAIL_PORT: ${SPRING_MAIL_PORT:-587}
+      SPRING_MAIL_USERNAME: ${SPRING_MAIL_USERNAME:-no-reply@medicareplus.com}
+      SPRING_MAIL_PASSWORD: ${SPRING_MAIL_PASSWORD:-}
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      eureka-server:
+        condition: service_healthy
+
+  # ─────────────────────────────────────────────
+  # Clinical Service (Port 8082)
+  # ─────────────────────────────────────────────
+  clinical-service:
+    build: ./clinical-service
+    container_name: clinical-service
+    ports:
+      - "8082:8082"
+    environment:
+      SPRING_DATA_MONGODB_URI: mongodb://mongodb:27017/clinical_db
+      EUREKA_URI: http://eureka-server:8761/eureka/
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      eureka-server:
+        condition: service_healthy
+
+  # ─────────────────────────────────────────────
+  # AI Chatbot Service (Port 8083)
+  # ─────────────────────────────────────────────
+  ai-chatbot-service:
+    build: ./ai-chatbot-service
+    container_name: ai-chatbot-service
+    ports:
+      - "8083:8083"
+    environment:
+      SPRING_DATA_MONGODB_URI: mongodb://mongodb:27017/chatbot_db
+      EUREKA_URI: http://eureka-server:8761/eureka/
+      GOOGLE_GEMINI_API_KEY: ${GOOGLE_GEMINI_API_KEY:-}
+    depends_on:
+      mongodb:
+        condition: service_healthy
+      eureka-server:
+        condition: service_healthy
+
+  # ─────────────────────────────────────────────
+  # API Gateway (Port 8080)
+  # ─────────────────────────────────────────────
+  api-gateway:
+    build: ./api-gateway
+    container_name: api-gateway
+    ports:
+      - "8080:8080"
+    environment:
+      EUREKA_URI: http://eureka-server:8761/eureka/
+    depends_on:
+      eureka-server:
+        condition: service_healthy
+      auth-service:
+        condition: service_started
+      clinical-service:
+        condition: service_started
+      ai-chatbot-service:
+        condition: service_started
+
+volumes:
+  mongodb_data:
