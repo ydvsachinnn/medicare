@@ -1,6 +1,6 @@
-# 🐳 Render Docker Deployment Guide — MediCare Plus
+# 🐳 Render Docker Deployment Guide — MediCare Plus (v2.0 Latest Release)
 
-This guide walks you through deploying the **MediCare Plus** Spring Boot web application onto **Render** using a **Docker Web Service** configuration.
+This guide walks you through deploying the **latest version** of **MediCare Plus** onto **Render** using Docker containerization.
 
 ---
 
